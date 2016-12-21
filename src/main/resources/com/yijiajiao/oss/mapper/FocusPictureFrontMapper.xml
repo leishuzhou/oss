@@ -1,0 +1,91 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yijiajiao.oss.mapper.FocusPictureFrontMapper">
+
+    <select id="showFrontFocus" resultType="map" parameterType="map">
+        SELECT
+        id id,
+        front_belongs frontBelongs,
+        front_area frontArea,
+        front_img frontImg,
+        front_sort frontSort,
+        front_title frontTitle,
+        front_url frontUrl,
+        front_bgcolor frontBgColor,
+        front_status frontStatus
+        FROM
+        focuspicturefront
+        WHERE
+        front_belongs = #{belongs}
+        AND front_area = #{area}
+        AND front_status = 1
+
+    </select>
+    <select id="getByBelongs" resultType="map" parameterType="string">
+        SELECT
+        *
+        FROM
+        focuspicturefront
+        WHERE
+        front_belongs = #{belongs}
+    </select>
+
+
+    <delete id="deleteFocus" parameterType="map">
+        DELETE FROM  focuspicturefront  WHERE front_belongs = #{belongs} AND front_area =#{area}
+    </delete>
+
+    <insert id="releasefocus" parameterType="map" >
+        INSERT INTO focuspicturefront (
+        id,
+        front_area,
+        front_belongs,
+        front_img,
+        front_sort,
+        front_status,
+        front_title,
+        front_url,
+        front_bgcolor
+        ) SELECT
+        f1.id,
+        f1.area,
+        f1.belongs,
+        f1.img,
+        f1.sort,
+        f1. STATUS,
+        f1.title,
+        f1.url,
+        f1.bgcolor
+        FROM
+        focuspicture f1
+        WHERE
+        belongs = #{belongs}
+        AND area = #{area}
+    </insert>
+    <insert id="saveFrontFocus" parameterType="map">
+
+        INSERT INTO focuspicturefront (
+        id,
+        front_belongs,
+        front_area,
+        front_img,
+        front_sort,
+        front_status,
+        front_title,
+        front_url,
+        front_bgcolor
+        )
+        VALUES
+        (
+        #{id},
+        #{belongs},
+        #{area},
+        #{img},
+        #{sort},
+        #{status},
+        #{title},
+        #{url},
+        #{bgColor}
+        )
+    </insert>
+
+</mapper>

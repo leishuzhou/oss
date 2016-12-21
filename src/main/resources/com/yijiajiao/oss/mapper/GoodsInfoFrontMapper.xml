@@ -1,0 +1,121 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yijiajiao.oss.mapper.GoodsInfoFrontMapper">
+
+   <select id="showgoods" parameterType="map" resultType="map">
+        SELECT
+        *
+        FROM
+        goodsinfofront
+        WHERE
+        front_belongs =#{belongs}
+        AND front_area=#{area}
+    </select>
+  <!--
+
+      <select id="getid" parameterType="map" resultType="map">
+          SELECT
+          *
+          FROM
+          goodsinfofront
+          WHERE
+          front_belongs =#{frontBelongs}
+          AND front_area#{frontArea}
+      </select>
+
+      <select id="getBelongs" parameterType="String" resultType="map">
+          SELECT
+          *
+          FROM
+          goodsinfofront
+          WHERE
+          front_belongs =#{frontBelongs}
+      </select>
+      <insert id="save" parameterMap="map">
+          INSERT INTO focuspicture (
+          id,
+          front_belongs,
+          front_area,
+          front_img,
+          front_sort,
+          front_status,
+          front_title,
+          front_url,
+          front_bgcolor
+          )
+          VALUES
+          (
+          #{id},
+          #{frontBelongs},
+          #{frontArea},
+          #{frontImg},
+          #{frontSort},
+          #{frontStatus},
+          #{frontTitle},
+          #{frontUrl},
+          #{frontBgcolor}
+          )
+      </insert>-->
+
+<select id="getShowGoods" parameterType="map" resultType="GoodsBean">
+  select MAX(front_belongs) frontBelongs,MAX(front_area)  frontArea from goodsinfofront
+  where front_belongs &lt; 8 GROUP BY front_belongs ,front_area
+</select>
+  <delete id="deleteFrontGoods" parameterType="map">
+    DELETE FROM  goodsinfofront  WHERE front_belongs = #{belongs} AND front_area =#{area}
+  </delete>
+
+  <insert id="releaseFrontGoods" parameterType="map" >
+    INSERT INTO goodsinfofront (
+    id,
+    front_area,
+    front_belongs,
+    front_name,
+    front_img,
+    front_sort,
+    front_url,
+    open_id
+    ) SELECT
+    f1.id,
+    f1.area,
+    f1.belongs,
+    f1. NAME,
+    f1.img,
+    f1.sort,
+    f1.url,
+    f1.open_id
+    FROM
+    goodsinfo f1
+    WHERE
+    belongs = #{belongs}
+    AND area = #{area}
+  </insert>
+
+  <insert id="saveFrontFocus" parameterType="map">
+
+    INSERT INTO goodsinfofront (
+    id,
+    front_belongs,
+    front_area,
+    front_img,
+    front_sort,
+    front_status,
+    front_title,
+    front_url,
+    front_bgcolor
+    )
+    VALUES
+    (
+    #{id},
+    #{belongs},
+    #{area},
+    #{img},
+    #{sort},
+    #{status},
+    #{title},
+    #{url},
+    #{bgColor}
+    )
+  </insert>
+
+
+</mapper>

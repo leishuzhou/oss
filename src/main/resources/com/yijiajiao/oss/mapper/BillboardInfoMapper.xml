@@ -1,0 +1,95 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yijiajiao.oss.mapper.BillboardInfoMapper">
+
+    <select id="getById" parameterType="int" resultType="map">
+  SELECT
+   id id,
+  area area,
+  img img,
+  sort sort,
+  status status,
+  url url,
+  username userName,
+  open_id openId
+  FROM
+  billboardinfo
+  WHERE
+  id = #{id}
+ </select>
+
+    <!--
+
+
+
+
+
+       <select id="findAll" resultType="Map">
+           SELECT * FROM billboardinfo
+       </select>
+
+      -->
+
+    <insert id="saveBill" parameterType="map">
+  INSERT INTO billboardinfo (
+  id,
+  area,
+  img,
+  sort,
+  status,
+  url,
+  username,
+  open_id
+  )
+  VALUES
+  (
+  #{id},
+  #{area},
+  #{img},
+  #{sort},
+  #{status},
+  #{url},
+  #{userName},
+  #{openId}
+  )
+ </insert>
+
+
+    <update id="changeOfPostion" parameterType="map">
+  UPDATE billboardinfo fup
+  SET fup.sort = CASE id
+  WHEN #{id1} THEN
+  #{sort2}
+  WHEN #{id2} THEN
+  #{sort1}
+  ELSE
+  fup.sort
+  END
+ </update>
+
+
+    <select id="getBillByArea" parameterType="String" resultType="map">
+  SELECT
+ id id,
+  area area,
+  img img,
+  sort sort,
+  status status,
+  url url,
+  username userName,
+  open_id openId
+  FROM
+  billboardinfo
+  WHERE
+  area = #{area}
+
+ </select>
+
+
+    <update id="saveOrUpdate" parameterType="map" >
+        UPDATE billboardinfo
+        SET img = #{img} ,
+        url = #{url} ,
+        username=#{userName} ,
+        open_id=#{openId} where id = #{id}
+    </update>
+</mapper>

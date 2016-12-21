@@ -1,0 +1,91 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yijiajiao.oss.mapper.IntegralRuleMapper">
+
+    <select id="getById" parameterType="int" resultType="map">
+        SELECT
+        id id,
+        rule_group ruleGroup,
+        rule_type ruleType,
+        update_time updateTime,
+        remark remark,
+        rule_limit ruleLimit,
+        create_time createTime,
+        value value,
+        is_del isDel
+        FROM
+        integral_rule
+        WHERE
+        id =#{id}
+    </select>
+
+    <update id="updatePrice" parameterType="double">
+        UPDATE integral_rule fup
+        <if test="id==15">
+            SET fup.value = #{price} *2
+        </if>
+        <if test="id==16">
+            SET fup.value =  #{price}
+        </if>
+        where id=#{id}
+    </update>
+
+    <insert id="save" parameterType="map">
+        INSERT INTO integral_rule (
+        id,
+        rule_type,
+        rule_group,
+        VALUE,
+        rule_limit,
+        is_del,
+        create_time,
+        update_time,
+        remark
+        )
+        VALUES
+        (
+        #{id},
+        #{ruleType},
+        #{ruleGroup},
+        #{value},
+        #{ruleLimit},
+        0,
+        NOW(),
+        NOW(),
+        #{remark}
+        )
+    </insert>
+    <!--   <select id="getIntegral" parameterType="int" resultType="map">
+         SELECT
+         *
+         FROM
+         integral_rule
+         WHERE
+         rule_type =#{ruleType} and rule_group=#{ruleGroup}
+     </select>
+-->
+
+
+     <update id="saveOrUpdate" parameterType="map" >
+         UPDATE integral_rule
+         SET
+         value = #{value} ,
+         rule_limit = #{ruleLimit} ,
+         update_time = NOW() where id = #{id}
+     </update>
+
+    <select id="getLists" parameterType="map" resultType="map">
+        SELECT
+        id id,
+        rule_group ruleGroup,
+        rule_type ruleType,
+        update_time updateTime,
+        remark remark,
+        rule_limit ruleLimit,
+        create_time createTime,
+        value value,
+        is_del isDel
+        from integral_rule
+    </select>
+
+
+</mapper>

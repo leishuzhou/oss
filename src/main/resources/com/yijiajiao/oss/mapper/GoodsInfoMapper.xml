@@ -1,0 +1,84 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yijiajiao.oss.mapper.GoodsInfoMapper">
+
+    <select id="getByGoodsId" parameterType="int" resultType="GoodsInfoBean">
+        SELECT
+        *
+        FROM
+        goodsinfo
+        WHERE
+        id =#{id}
+    </select>
+
+    <update id="changeOfPostion" parameterType="map">
+        UPDATE goodsinfo fup
+        SET fup.sort = CASE id
+        WHEN #{id1} THEN
+        #{sort2}
+        WHEN #{id2} THEN
+        #{sort1}
+        ELSE
+        fup.sort
+        END
+    </update>
+
+    <select id="getGoodsByBelongsAndArea" resultType="map" parameterType="map">
+
+        SELECT
+        id id,
+        belongs belongs,
+        area area,
+        img img,
+        name name,
+        sort sort,
+        url url,
+        open_id openId
+        FROM
+        goodsinfo
+        WHERE
+        belongs = #{belongs}
+        AND area = #{area}
+
+    </select>
+
+    <!-- <insert id="save" parameterMap="map">
+        INSERT INTO goodsinfo (
+        id,
+        belongs,
+        area,
+        img,
+        sort,
+        name,
+        url,
+        open_id
+        )
+        VALUES
+        (
+        #{id},
+        #{belongs},
+        #{area},
+        #{img},
+        #{sort},
+        #{name},
+        #{url},
+        #{openId}
+        )
+    </insert>
+
+
+    <select id="findAll" resultType="map">
+        SELECT * FROM goodsinfo
+    </select>
+
+-->
+    <update id="updateGoods" parameterType="GoodsInfoBean">
+        UPDATE goodsinfo
+        SET belongs = #{belongs} ,
+        area = #{area} ,
+        img = #{img} ,
+        sort = #{sort} ,
+        name = #{name} ,
+        open_id = #{openId} where id = #{id}
+    </update>
+
+</mapper>

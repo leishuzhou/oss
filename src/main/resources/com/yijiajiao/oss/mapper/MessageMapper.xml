@@ -1,0 +1,57 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yijiajiao.oss.mapper.MessageMapper">
+
+   <!-- <select id="getById" parameterType="int" resultType="map">
+        SELECT
+        *
+        FROM
+        message WHERE id =#{id}
+    </select>
+
+    <select id="querybystatus" parameterMap="int" resultType="map">
+        SELECT
+        *
+        FROM
+        message WHERE status =#{status}
+    </select>
+
+    <insert id="save" parameterMap="map">
+        INSERT INTO message (
+        id,
+        objecter,
+        title,
+        content,
+        marks,
+        create_time,
+        sender,
+        transmit,
+        STATUS
+        )
+        VALUES
+        (
+        #{id},
+        #{objecter},
+        #{title},
+        #{content},
+        #{marks},
+        0,
+        #{sender},
+        #{transmit},
+        #{status}
+        )
+    </insert>
+    <select id="findAll" resultType="map">
+        SELECT * FROM message
+    </select>
+    <update id="saveOrUpdate" parameterMap="map" >
+        UPDATE message
+        SET objecter = #{objecter} OR
+        title = #{title} OR
+        content = #{content} OR
+        marks = #{marks} OR
+        create_time = NOW()  OR
+        sender = #{sender} OR
+        transmit=#{transmit} OR
+        status=#{status} where id = #{id}
+    </update>-->
+</mapper>

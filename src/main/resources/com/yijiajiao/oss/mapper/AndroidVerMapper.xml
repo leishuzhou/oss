@@ -1,0 +1,79 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yijiajiao.oss.mapper.AndroidVerMapper">
+
+    <insert id="commitIsssueVer" parameterType="map">
+        INSERT INTO t_android_ver (
+        id,
+        down_url,
+        user_name,
+        ver_remark,
+        version,
+        is_renewal,
+        is_renewal_force,
+        app_type,
+        version_code,
+        issue_time
+        )
+        VALUES
+        (
+        #{id},
+        #{downUrl},
+        #{userName},
+        #{verRemark},
+        #{version},
+        #{isRenewal},
+        #{isRenewalForce},
+        #{appType},
+        0,
+        NOW()
+        )
+    </insert>
+    <update id="autoVersionCode" parameterType="int">
+        UPDATE t_android_ver
+        SET version_code = #{versionCode} + 1
+        WHERE
+        id = #{id}
+    </update>
+
+    <select id="newAndroidVer" resultType="map" parameterType="int">
+        SELECT
+        id id,
+        down_url downUrl,
+        version version,
+        version_code versionCode,
+        ver_remark verRemark,
+        is_renewal_force isRenewalForce
+        FROM
+        t_android_ver
+        WHERE
+        id = (
+        SELECT
+        MAX(id)
+        FROM
+        t_android_ver where app_type=#{appType}
+        )
+    </select>
+
+
+    <select id="pageList" resultType="map" parameterType="map">
+        <![CDATA[
+             SELECT
+                id id,
+                user_name userName,
+                down_url downUrl,
+                ver_remark verRemark,
+                version version,
+                is_renewal isRenewal,
+                is_renewal_force isRenewalForce,
+                app_type appType,
+                version_code versionCode,
+                issue_time issueTime
+                FROM
+                t_android_ver
+                WHERE
+                app_type = #{appType}
+                ORDER BY
+                issue_time DESC
+        ]]>
+    </select>
+</mapper>
