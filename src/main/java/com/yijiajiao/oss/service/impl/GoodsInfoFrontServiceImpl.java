@@ -162,6 +162,7 @@ public class GoodsInfoFrontServiceImpl implements GoodsInfoFrontService {
 							front.setStoreScore(obj.getDouble("storeScore"));
 							front.setPopularity(Integer.valueOf(obj.getString("popularity")));
 							front.setBrief(obj.getString("brief"));
+							front.setIntroduction(CastUtil.castString(obj.getString("introduction")));
 							list.add(front);
 						}
 						log.info("正确信息：" + r.getResult().toString());
@@ -194,7 +195,7 @@ public class GoodsInfoFrontServiceImpl implements GoodsInfoFrontService {
 						sb.append(goodslist.get(i).get("open_id") + ",");
 						ids.setIds(sb.substring(0, sb.toString().length() - 1));
 					}
-					String resultJsonStr = SolutionUtil.httpRest(goods_server, goods_byIds + ids.getIds(), null, null,
+					String resultJsonStr =  SolutionUtil.httpRest(goods_server, goods_byIds + ids.getIds(), null, null,
 							"GET");
 					Map<?, ?> map = new Gson().fromJson(resultJsonStr, Map.class);
 					List<Map<?,?>> _list = (List) map.get("result");

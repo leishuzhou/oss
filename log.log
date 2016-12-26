@@ -19890,3 +19890,1083 @@ Caused by: java.lang.IllegalArgumentException: Parameter Maps collection does no
 请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/2/3
 2016-12-21 15:20:00.671  INFO 29300 --- [pool-1-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
 请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/2/4
+2016-12-23 11:25:40.365  INFO 27616 --- [main] com.yijiajiao.oss.OssApplication         : Starting OssApplication on lei with PID 27616 (D:\idea\oss\target\classes started by leishuzhou in D:\idea\oss)
+2016-12-23 11:25:40.445  INFO 27616 --- [main] com.yijiajiao.oss.OssApplication         : No active profile set, falling back to default profiles: default
+2016-12-23 11:25:43.259  INFO 27616 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@ab9cd2a: startup date [Fri Dec 23 11:25:43 CST 2016]; root of context hierarchy
+2016-12-23 11:25:44.859  WARN 27616 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'androidVerMapper' and 'com.yijiajiao.oss.mapper.AndroidVerMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:25:44.859  WARN 27616 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'billboardInfoFrontMapper' and 'com.yijiajiao.oss.mapper.BillboardInfoFrontMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:25:44.859  WARN 27616 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'billboardInfoMapper' and 'com.yijiajiao.oss.mapper.BillboardInfoMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:25:44.859  WARN 27616 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'demoMapper' and 'com.yijiajiao.oss.mapper.DemoMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:25:44.859  WARN 27616 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'feedBackMapper' and 'com.yijiajiao.oss.mapper.FeedBackMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:25:44.859  WARN 27616 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'focusPictureFrontMapper' and 'com.yijiajiao.oss.mapper.FocusPictureFrontMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:25:44.859  WARN 27616 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'focusPictureMapper' and 'com.yijiajiao.oss.mapper.FocusPictureMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:25:44.859  WARN 27616 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'goodsInfoFrontMapper' and 'com.yijiajiao.oss.mapper.GoodsInfoFrontMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:25:44.859  WARN 27616 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'goodsInfoMapper' and 'com.yijiajiao.oss.mapper.GoodsInfoMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:25:44.862  WARN 27616 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'integralRuleMapper' and 'com.yijiajiao.oss.mapper.IntegralRuleMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:25:44.862  WARN 27616 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'messageMapper' and 'com.yijiajiao.oss.mapper.MessageMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:25:44.862  WARN 27616 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.yijiajiao.oss.mapper]' package. Please check your configuration.
+2016-12-23 11:25:45.859  INFO 27616 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3bcda3d3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-12-23 11:25:46.835  INFO 27616 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 7002 (http)
+2016-12-23 11:25:46.865  INFO 27616 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-12-23 11:25:46.867  INFO 27616 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2016-12-23 11:25:46.982  INFO 27616 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-12-23 11:25:46.983  INFO 27616 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3724 ms
+2016-12-23 11:25:47.066  INFO 27616 --- [localhost-startStop-1] c.y.oss.config.DruidConfiguration        : ServletRegistrationBean 已注册
+2016-12-23 11:25:47.075  INFO 27616 --- [localhost-startStop-1] c.y.oss.config.DruidConfiguration        : FilterRegistrationBean 已注册
+2016-12-23 11:25:47.433  INFO 27616 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2016-12-23 11:25:47.435  INFO 27616 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-12-23 11:25:47.438  INFO 27616 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2016-12-23 11:25:47.439  INFO 27616 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-12-23 11:25:47.439  INFO 27616 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-12-23 11:25:47.439  INFO 27616 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-12-23 11:25:47.439  INFO 27616 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-12-23 11:25:47.439  INFO 27616 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2016-12-23 11:25:47.439  INFO 27616 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2016-12-23 11:25:47.440  INFO 27616 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'DumpFilter' to urls: [/*]
+2016-12-23 11:25:47.442  INFO 27616 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2016-12-23 11:25:47.497  INFO 27616 --- [localhost-startStop-1] com.yijiajiao.oss.filter.DumpFilter      : dumpFitler init...
+2016-12-23 11:25:47.662 ERROR 27616 --- [main] com.alibaba.druid.filter.FilterManager   : load filter error, filter not found : logback.slf4j
+2016-12-23 11:25:48.361  INFO 27616 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2016-12-23 11:25:48.361  INFO 27616 --- [main] c.y.oss.config.DruidConfiguration        : DruidDataSource created ...............
+2016-12-23 11:25:50.515  INFO 27616 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: No access restrictor found, access to any MBean is allowed
+2016-12-23 11:25:50.842  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@ab9cd2a: startup date [Fri Dec 23 11:25:43 CST 2016]; root of context hierarchy
+2016-12-23 11:25:50.953  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/androidVer/issue],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.AndroidController.add(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:25:50.954  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/androidVer/pageList],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.AndroidController.pageDemo(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+2016-12-23 11:25:50.954  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/androidVer/newAndroidVer],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.AndroidController.newAndroidVer(int)
+2016-12-23 11:25:50.956  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/billbord/addbillboard],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.BillboardInfoController.addbillboard(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:25:50.957  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/billbord/editbill],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.BillboardInfoController.editbill(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:25:50.957  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/billbord/getbillboardarea/{area}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.BillboardInfoController.getBillboardarea(java.lang.String)
+2016-12-23 11:25:50.957  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/billbord/changepotation/{id1}/{sort2}/{id2}/{sort1}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.BillboardInfoController.changePotation(int,int,int,int)
+2016-12-23 11:25:50.957  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/billbord/releasebillboard/{area}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.BillboardInfoController.releasedBillboard(java.lang.String)
+2016-12-23 11:25:50.959  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/billbord/getbillbord/{id}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.BillboardInfoController.getbillbordbyid(int)
+2016-12-23 11:25:50.961  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/frontbill/showbill/{area}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.BillboardInfoFrontController.showBill(java.lang.String)
+2016-12-23 11:25:50.961  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pageDemo],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.DemoController.pageDemo(java.lang.String,java.lang.Integer,java.lang.Integer) throws com.eduspace.eduplatform.util.exception.MyException
+2016-12-23 11:25:50.962  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.DemoController.demo(java.lang.String,java.lang.Integer) throws java.lang.Exception
+2016-12-23 11:25:50.963  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/feedback/getById/{id}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FeedBackController.getFeedback(java.lang.Integer) throws java.lang.Exception
+2016-12-23 11:25:50.963  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/feedback/add],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FeedBackController.addFeed(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:25:50.963  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/feedback/getpage],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FeedBackController.getPageper(int,int,java.lang.String) throws com.eduspace.eduplatform.util.exception.MyException
+2016-12-23 11:25:50.965  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/focus/getfocusarea/{belongs}/{area}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FoucusPictureController.getfocusarea(java.lang.String,java.lang.String)
+2016-12-23 11:25:50.966  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/focus/exitfocus],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FoucusPictureController.FocusPicture(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:25:50.966  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/focus/releasefocus/{belongs}/{area}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FoucusPictureController.releaseFocus(java.lang.String,java.lang.String)
+2016-12-23 11:25:50.966  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/focus/changepotaion/{id1}/{sort2}/{id2}/{sort1}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FoucusPictureController.changepotaion(int,int,int,int)
+2016-12-23 11:25:50.966  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/focus/getfocuspicture/{id}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FoucusPictureController.getFocusPictureDisable(java.lang.Integer)
+2016-12-23 11:25:50.966  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/focus/addfocus],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FoucusPictureController.getFoucspicture(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:25:50.968  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/frontfocus/showfocus/{belongs}/{area}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FoucusPictureFrontController.showFocus(java.lang.String,java.lang.String)
+2016-12-23 11:25:50.970  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goodsinfo/releasedgoods/{belongs}/{area}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.GoodsInfoController.releasedGoods(java.lang.String,java.lang.String)
+2016-12-23 11:25:50.977  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goodsinfo/getgoodsarea/{belongs}/{area}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.GoodsInfoController.getGoodsarea(java.lang.String,java.lang.String)
+2016-12-23 11:25:50.977  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goodsinfo/addgoods],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.GoodsInfoController.addGoodsinfo(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:25:50.977  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goodsinfo/getgoods/{id}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.GoodsInfoController.getGoodsbyid(int)
+2016-12-23 11:25:50.978  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goodsinfo/editgoods],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.GoodsInfoController.editGoods(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:25:50.978  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goodsinfo/hotSearch],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.GoodsInfoController.hotSearch(java.lang.String,int)
+2016-12-23 11:25:50.978  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goodsinfo/changepotation/{id1}/{sort2}/{id2}/{sort1}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.GoodsInfoController.changePotation(int,int,int,int)
+2016-12-23 11:25:50.979  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/frontgoods/show],methods=[GET]}" onto public java.util.List<com.yijiajiao.oss.domain.vo.GoodsBean> com.yijiajiao.oss.controller.GoodsInfoFrontController.getShowGoods()
+2016-12-23 11:25:50.979  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/frontgoods/getGoods/{belongs}/{area}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.GoodsInfoFrontController.getGoods(java.lang.String,java.lang.String)
+2016-12-23 11:25:50.981  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/integral/add],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.IntegralRuleController.add(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:25:50.981  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/integral/getList],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.IntegralRuleController.getList(java.lang.Integer,java.lang.Integer)
+2016-12-23 11:25:50.981  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/integral/edit],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.IntegralRuleController.exitIntegration(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:25:50.981  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/integral/getById],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.IntegralRuleController.getIntegration(int,java.lang.Double)
+2016-12-23 11:25:50.985  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/message/getmessage/{id}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.MessageController.getMessage(int)
+2016-12-23 11:25:50.985  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/message/sendmessageall],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.MessageController.sendMessaeAll(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:25:50.985  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/message/getpage],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.MessageController.getPage(int,int,java.lang.String)
+2016-12-23 11:25:50.985  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/message/getfrontpages],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.MessageController.getFrontPages(int,int,java.lang.String,java.lang.String)
+2016-12-23 11:25:50.986  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/message/sendmessage],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.MessageController.sendMessae(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:25:50.994  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-12-23 11:25:50.994  INFO 27616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-12-23 11:25:51.095  INFO 27616 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/druid/*] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-23 11:25:51.099  INFO 27616 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-23 11:25:51.099  INFO 27616 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-23 11:25:51.126  INFO 27616 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionProcess
+2016-12-23 11:25:51.164  INFO 27616 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-23 11:25:51.920  INFO 27616 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-23 11:25:51.921  INFO 27616 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-23 11:25:51.926  INFO 27616 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2016-12-23 11:25:51.927  INFO 27616 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-23 11:25:51.928  INFO 27616 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/jolokia/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.actuate.endpoint.mvc.JolokiaMvcEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2016-12-23 11:25:51.929  INFO 27616 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+2016-12-23 11:25:51.930  INFO 27616 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-23 11:25:51.931  INFO 27616 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-23 11:25:51.932  INFO 27616 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2016-12-23 11:25:51.933  INFO 27616 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-23 11:25:51.934  INFO 27616 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-23 11:25:51.934  INFO 27616 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-23 11:25:51.935  INFO 27616 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2016-12-23 11:25:51.936  INFO 27616 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2016-12-23 11:25:51.937  INFO 27616 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-23 11:25:52.932  INFO 27616 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-12-23 11:25:52.933  INFO 27616 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2016-12-23 11:25:52.943  INFO 27616 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2016-12-23 11:25:52.962  INFO 27616 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2016-12-23 11:25:53.092  INFO 27616 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2016-12-23 11:25:53.182  INFO 27616 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 7002 (http)
+2016-12-23 11:25:53.187  INFO 27616 --- [main] com.yijiajiao.oss.OssApplication         : Started OssApplication in 13.843 seconds (JVM running for 31.383)
+2016-12-23 11:30:00.587  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/2/3
+2016-12-23 11:30:01.679  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/2/4
+2016-12-23 11:30:02.356  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/2/5
+2016-12-23 11:30:03.060  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/3/3
+2016-12-23 11:30:03.739  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/3/4
+2016-12-23 11:30:04.389  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/3/5
+2016-12-23 11:30:05.071  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/4/3
+2016-12-23 11:30:05.746  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/4/4
+2016-12-23 11:30:06.398  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/4/5
+2016-12-23 11:30:07.055  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/5/3
+2016-12-23 11:30:07.720  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/5/4
+2016-12-23 11:30:08.487  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/5/5
+2016-12-23 11:30:09.200  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/6/3
+2016-12-23 11:30:09.821  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/6/4
+2016-12-23 11:30:10.488  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/6/5
+2016-12-23 11:30:11.133  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/7/1
+2016-12-23 11:30:11.776  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/7/2
+2016-12-23 11:30:12.352  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/7/3
+2016-12-23 11:30:12.985  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/7/4
+2016-12-23 11:31:56.427  INFO 3396 --- [main] com.yijiajiao.oss.OssApplication         : Starting OssApplication on lei with PID 3396 (D:\idea\oss\target\classes started by leishuzhou in D:\idea\oss)
+2016-12-23 11:31:56.432  INFO 3396 --- [main] com.yijiajiao.oss.OssApplication         : No active profile set, falling back to default profiles: default
+2016-12-23 11:31:56.881  INFO 3396 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@44ca2fc8: startup date [Fri Dec 23 11:31:56 CST 2016]; root of context hierarchy
+2016-12-23 11:31:58.201  WARN 3396 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'androidVerMapper' and 'com.yijiajiao.oss.mapper.AndroidVerMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:31:58.201  WARN 3396 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'billboardInfoFrontMapper' and 'com.yijiajiao.oss.mapper.BillboardInfoFrontMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:31:58.201  WARN 3396 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'billboardInfoMapper' and 'com.yijiajiao.oss.mapper.BillboardInfoMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:31:58.201  WARN 3396 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'demoMapper' and 'com.yijiajiao.oss.mapper.DemoMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:31:58.201  WARN 3396 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'feedBackMapper' and 'com.yijiajiao.oss.mapper.FeedBackMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:31:58.201  WARN 3396 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'focusPictureFrontMapper' and 'com.yijiajiao.oss.mapper.FocusPictureFrontMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:31:58.202  WARN 3396 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'focusPictureMapper' and 'com.yijiajiao.oss.mapper.FocusPictureMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:31:58.202  WARN 3396 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'goodsInfoFrontMapper' and 'com.yijiajiao.oss.mapper.GoodsInfoFrontMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:31:58.202  WARN 3396 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'goodsInfoMapper' and 'com.yijiajiao.oss.mapper.GoodsInfoMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:31:58.202  WARN 3396 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'integralRuleMapper' and 'com.yijiajiao.oss.mapper.IntegralRuleMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:31:58.202  WARN 3396 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'messageMapper' and 'com.yijiajiao.oss.mapper.MessageMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:31:58.202  WARN 3396 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.yijiajiao.oss.mapper]' package. Please check your configuration.
+2016-12-23 11:31:59.012  INFO 3396 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$763fafc2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-12-23 11:31:59.682  INFO 3396 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 7002 (http)
+2016-12-23 11:31:59.698  INFO 3396 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-12-23 11:31:59.699  INFO 3396 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2016-12-23 11:31:59.837  INFO 3396 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-12-23 11:31:59.838  INFO 3396 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2959 ms
+2016-12-23 11:31:59.890  INFO 3396 --- [localhost-startStop-1] c.y.oss.config.DruidConfiguration        : ServletRegistrationBean 已注册
+2016-12-23 11:31:59.900  INFO 3396 --- [localhost-startStop-1] c.y.oss.config.DruidConfiguration        : FilterRegistrationBean 已注册
+2016-12-23 11:32:00.262  INFO 3396 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2016-12-23 11:32:00.263  INFO 3396 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-12-23 11:32:00.266  INFO 3396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2016-12-23 11:32:00.267  INFO 3396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-12-23 11:32:00.267  INFO 3396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-12-23 11:32:00.268  INFO 3396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-12-23 11:32:00.268  INFO 3396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-12-23 11:32:00.268  INFO 3396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2016-12-23 11:32:00.269  INFO 3396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2016-12-23 11:32:00.269  INFO 3396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'DumpFilter' to urls: [/*]
+2016-12-23 11:32:00.269  INFO 3396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2016-12-23 11:32:00.299  INFO 3396 --- [localhost-startStop-1] com.yijiajiao.oss.filter.DumpFilter      : dumpFitler init...
+2016-12-23 11:32:00.422 ERROR 3396 --- [main] com.alibaba.druid.filter.FilterManager   : load filter error, filter not found : logback.slf4j
+2016-12-23 11:32:01.076  INFO 3396 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2016-12-23 11:32:01.076  INFO 3396 --- [main] c.y.oss.config.DruidConfiguration        : DruidDataSource created ...............
+2016-12-23 11:32:02.834  INFO 3396 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: No access restrictor found, access to any MBean is allowed
+2016-12-23 11:32:03.098  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@44ca2fc8: startup date [Fri Dec 23 11:31:56 CST 2016]; root of context hierarchy
+2016-12-23 11:32:03.207  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/androidVer/issue],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.AndroidController.add(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:32:03.209  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/androidVer/pageList],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.AndroidController.pageDemo(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+2016-12-23 11:32:03.210  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/androidVer/newAndroidVer],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.AndroidController.newAndroidVer(int)
+2016-12-23 11:32:03.211  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/billbord/changepotation/{id1}/{sort2}/{id2}/{sort1}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.BillboardInfoController.changePotation(int,int,int,int)
+2016-12-23 11:32:03.212  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/billbord/getbillboardarea/{area}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.BillboardInfoController.getBillboardarea(java.lang.String)
+2016-12-23 11:32:03.212  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/billbord/getbillbord/{id}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.BillboardInfoController.getbillbordbyid(int)
+2016-12-23 11:32:03.212  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/billbord/releasebillboard/{area}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.BillboardInfoController.releasedBillboard(java.lang.String)
+2016-12-23 11:32:03.212  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/billbord/editbill],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.BillboardInfoController.editbill(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:32:03.212  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/billbord/addbillboard],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.BillboardInfoController.addbillboard(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:32:03.213  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/frontbill/showbill/{area}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.BillboardInfoFrontController.showBill(java.lang.String)
+2016-12-23 11:32:03.214  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pageDemo],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.DemoController.pageDemo(java.lang.String,java.lang.Integer,java.lang.Integer) throws com.eduspace.eduplatform.util.exception.MyException
+2016-12-23 11:32:03.214  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.DemoController.demo(java.lang.String,java.lang.Integer) throws java.lang.Exception
+2016-12-23 11:32:03.215  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/feedback/getById/{id}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FeedBackController.getFeedback(java.lang.Integer) throws java.lang.Exception
+2016-12-23 11:32:03.215  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/feedback/add],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FeedBackController.addFeed(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:32:03.215  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/feedback/getpage],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FeedBackController.getPageper(int,int,java.lang.String) throws com.eduspace.eduplatform.util.exception.MyException
+2016-12-23 11:32:03.217  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/focus/addfocus],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FoucusPictureController.getFoucspicture(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:32:03.217  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/focus/getfocuspicture/{id}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FoucusPictureController.getFocusPictureDisable(java.lang.Integer)
+2016-12-23 11:32:03.217  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/focus/getfocusarea/{belongs}/{area}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FoucusPictureController.getfocusarea(java.lang.String,java.lang.String)
+2016-12-23 11:32:03.217  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/focus/changepotaion/{id1}/{sort2}/{id2}/{sort1}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FoucusPictureController.changepotaion(int,int,int,int)
+2016-12-23 11:32:03.218  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/focus/exitfocus],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FoucusPictureController.FocusPicture(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:32:03.218  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/focus/releasefocus/{belongs}/{area}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FoucusPictureController.releaseFocus(java.lang.String,java.lang.String)
+2016-12-23 11:32:03.224  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/frontfocus/showfocus/{belongs}/{area}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FoucusPictureFrontController.showFocus(java.lang.String,java.lang.String)
+2016-12-23 11:32:03.228  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goodsinfo/changepotation/{id1}/{sort2}/{id2}/{sort1}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.GoodsInfoController.changePotation(int,int,int,int)
+2016-12-23 11:32:03.228  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goodsinfo/releasedgoods/{belongs}/{area}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.GoodsInfoController.releasedGoods(java.lang.String,java.lang.String)
+2016-12-23 11:32:03.229  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goodsinfo/addgoods],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.GoodsInfoController.addGoodsinfo(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:32:03.229  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goodsinfo/hotSearch],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.GoodsInfoController.hotSearch(java.lang.String,int)
+2016-12-23 11:32:03.229  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goodsinfo/getgoods/{id}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.GoodsInfoController.getGoodsbyid(int)
+2016-12-23 11:32:03.229  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goodsinfo/editgoods],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.GoodsInfoController.editGoods(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:32:03.230  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goodsinfo/getgoodsarea/{belongs}/{area}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.GoodsInfoController.getGoodsarea(java.lang.String,java.lang.String)
+2016-12-23 11:32:03.230  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/frontgoods/show],methods=[GET]}" onto public java.util.List<com.yijiajiao.oss.domain.vo.GoodsBean> com.yijiajiao.oss.controller.GoodsInfoFrontController.getShowGoods()
+2016-12-23 11:32:03.230  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/frontgoods/getGoods/{belongs}/{area}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.GoodsInfoFrontController.getGoods(java.lang.String,java.lang.String)
+2016-12-23 11:32:03.232  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/integral/add],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.IntegralRuleController.add(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:32:03.232  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/integral/getList],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.IntegralRuleController.getList(java.lang.Integer,java.lang.Integer)
+2016-12-23 11:32:03.232  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/integral/getById],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.IntegralRuleController.getIntegration(int,java.lang.Double)
+2016-12-23 11:32:03.232  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/integral/edit],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.IntegralRuleController.exitIntegration(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:32:03.234  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/message/getmessage/{id}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.MessageController.getMessage(int)
+2016-12-23 11:32:03.234  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/message/sendmessage],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.MessageController.sendMessae(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:32:03.234  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/message/sendmessageall],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.MessageController.sendMessaeAll(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:32:03.234  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/message/getpage],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.MessageController.getPage(int,int,java.lang.String)
+2016-12-23 11:32:03.235  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/message/getfrontpages],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.MessageController.getFrontPages(int,int,java.lang.String,java.lang.String)
+2016-12-23 11:32:03.239  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-12-23 11:32:03.239  INFO 3396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-12-23 11:32:03.339  INFO 3396 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/druid/*] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-23 11:32:03.339  INFO 3396 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-23 11:32:03.339  INFO 3396 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-23 11:32:03.390  INFO 3396 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionProcess
+2016-12-23 11:32:03.449  INFO 3396 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-23 11:32:04.218  INFO 3396 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-23 11:32:04.219  INFO 3396 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-23 11:32:04.224  INFO 3396 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-23 11:32:04.225  INFO 3396 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2016-12-23 11:32:04.226  INFO 3396 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-23 11:32:04.227  INFO 3396 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2016-12-23 11:32:04.227  INFO 3396 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-23 11:32:04.228  INFO 3396 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-23 11:32:04.229  INFO 3396 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-23 11:32:04.229  INFO 3396 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-23 11:32:04.230  INFO 3396 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2016-12-23 11:32:04.231  INFO 3396 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/jolokia/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.actuate.endpoint.mvc.JolokiaMvcEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2016-12-23 11:32:04.231  INFO 3396 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+2016-12-23 11:32:04.232  INFO 3396 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2016-12-23 11:32:04.232  INFO 3396 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-23 11:32:04.937  INFO 3396 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-12-23 11:32:04.938  INFO 3396 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2016-12-23 11:32:04.947  INFO 3396 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2016-12-23 11:32:04.952  INFO 3396 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2016-12-23 11:32:05.043  INFO 3396 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2016-12-23 11:32:05.080 ERROR 3396 --- [main] o.a.coyote.http11.Http11NioProtocol      : Failed to start end point associated with ProtocolHandler [http-nio-7002]
+
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:444)
+	at sun.nio.ch.Net.bind(Net.java:436)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.yijiajiao.oss.OssApplication.main(OssApplication.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:506)
+	at java.lang.Thread.run(Thread.java:744)
+
+2016-12-23 11:32:05.082 ERROR 3396 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-7002]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-7002]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.yijiajiao.oss.OssApplication.main(OssApplication.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:506)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:976)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 19 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:444)
+	at sun.nio.ch.Net.bind(Net.java:436)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969)
+	... 20 common frames omitted
+
+2016-12-23 11:32:05.090  INFO 3396 --- [main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2016-12-23 11:32:05.142  INFO 3396 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2016-12-23 11:32:05.149 ERROR 3396 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 7002 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 7002, or configure this application to listen on another port.
+
+2016-12-23 11:32:05.149  INFO 3396 --- [main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@44ca2fc8: startup date [Fri Dec 23 11:31:56 CST 2016]; root of context hierarchy
+2016-12-23 11:32:05.150  INFO 3396 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2016-12-23 11:32:05.169  INFO 3396 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2016-12-23 11:32:05.169  INFO 3396 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2016-12-23 11:32:05.178  INFO 3396 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2016-12-23 11:40:00.058  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/2/3
+2016-12-23 11:40:00.515  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/2/4
+2016-12-23 11:40:00.980  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/2/5
+2016-12-23 11:40:01.449  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/3/3
+2016-12-23 11:40:01.868  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/3/4
+2016-12-23 11:40:02.276  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/3/5
+2016-12-23 11:40:02.710  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/4/3
+2016-12-23 11:40:03.151  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/4/4
+2016-12-23 11:40:03.561  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/4/5
+2016-12-23 11:40:03.976  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/5/3
+2016-12-23 11:40:04.417  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/5/4
+2016-12-23 11:40:04.838  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/5/5
+2016-12-23 11:40:05.291  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/6/3
+2016-12-23 11:40:05.768  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/6/4
+2016-12-23 11:40:06.212  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/6/5
+2016-12-23 11:40:06.613  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/7/1
+2016-12-23 11:40:07.005  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/7/2
+2016-12-23 11:40:07.342  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/7/3
+2016-12-23 11:40:07.741  INFO 27616 --- [pool-2-thread-1] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22020/yijiajiao-oss/frontgoods/getGoods/7/4
+2016-12-23 11:51:28.996  INFO 30984 --- [main] com.yijiajiao.oss.OssApplication         : Starting OssApplication on lei with PID 30984 (D:\idea\oss\target\classes started by leishuzhou in D:\idea\oss)
+2016-12-23 11:51:29.000  INFO 30984 --- [main] com.yijiajiao.oss.OssApplication         : No active profile set, falling back to default profiles: default
+2016-12-23 11:51:29.428  INFO 30984 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16391170: startup date [Fri Dec 23 11:51:29 CST 2016]; root of context hierarchy
+2016-12-23 11:51:30.840  WARN 30984 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'androidVerMapper' and 'com.yijiajiao.oss.mapper.AndroidVerMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:51:30.840  WARN 30984 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'billboardInfoFrontMapper' and 'com.yijiajiao.oss.mapper.BillboardInfoFrontMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:51:30.840  WARN 30984 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'billboardInfoMapper' and 'com.yijiajiao.oss.mapper.BillboardInfoMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:51:30.840  WARN 30984 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'demoMapper' and 'com.yijiajiao.oss.mapper.DemoMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:51:30.841  WARN 30984 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'feedBackMapper' and 'com.yijiajiao.oss.mapper.FeedBackMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:51:30.841  WARN 30984 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'focusPictureFrontMapper' and 'com.yijiajiao.oss.mapper.FocusPictureFrontMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:51:30.841  WARN 30984 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'focusPictureMapper' and 'com.yijiajiao.oss.mapper.FocusPictureMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:51:30.841  WARN 30984 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'goodsInfoFrontMapper' and 'com.yijiajiao.oss.mapper.GoodsInfoFrontMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:51:30.841  WARN 30984 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'goodsInfoMapper' and 'com.yijiajiao.oss.mapper.GoodsInfoMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:51:30.841  WARN 30984 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'integralRuleMapper' and 'com.yijiajiao.oss.mapper.IntegralRuleMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:51:30.841  WARN 30984 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'messageMapper' and 'com.yijiajiao.oss.mapper.MessageMapper' mapperInterface. Bean already defined with the same name!
+2016-12-23 11:51:30.842  WARN 30984 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.yijiajiao.oss.mapper]' package. Please check your configuration.
+2016-12-23 11:51:31.867  INFO 30984 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cd3662d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-12-23 11:51:32.622  INFO 30984 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 7002 (http)
+2016-12-23 11:51:32.638  INFO 30984 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-12-23 11:51:32.639  INFO 30984 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2016-12-23 11:51:32.730  INFO 30984 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-12-23 11:51:32.730  INFO 30984 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3304 ms
+2016-12-23 11:51:32.781  INFO 30984 --- [localhost-startStop-1] c.y.oss.config.DruidConfiguration        : ServletRegistrationBean 已注册
+2016-12-23 11:51:32.791  INFO 30984 --- [localhost-startStop-1] c.y.oss.config.DruidConfiguration        : FilterRegistrationBean 已注册
+2016-12-23 11:51:33.134  INFO 30984 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2016-12-23 11:51:33.136  INFO 30984 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-12-23 11:51:33.139  INFO 30984 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2016-12-23 11:51:33.139  INFO 30984 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-12-23 11:51:33.139  INFO 30984 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-12-23 11:51:33.140  INFO 30984 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-12-23 11:51:33.140  INFO 30984 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-12-23 11:51:33.140  INFO 30984 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2016-12-23 11:51:33.140  INFO 30984 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2016-12-23 11:51:33.141  INFO 30984 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'DumpFilter' to urls: [/*]
+2016-12-23 11:51:33.142  INFO 30984 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2016-12-23 11:51:33.170  INFO 30984 --- [localhost-startStop-1] com.yijiajiao.oss.filter.DumpFilter      : dumpFitler init...
+2016-12-23 11:51:33.337 ERROR 30984 --- [main] com.alibaba.druid.filter.FilterManager   : load filter error, filter not found : logback.slf4j
+2016-12-23 11:51:34.900  INFO 30984 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2016-12-23 11:51:34.901  INFO 30984 --- [main] c.y.oss.config.DruidConfiguration        : DruidDataSource created ...............
+2016-12-23 11:51:37.845  INFO 30984 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: No access restrictor found, access to any MBean is allowed
+2016-12-23 11:51:38.100  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16391170: startup date [Fri Dec 23 11:51:29 CST 2016]; root of context hierarchy
+2016-12-23 11:51:38.198  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/androidVer/issue],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.AndroidController.add(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:51:38.199  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/androidVer/pageList],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.AndroidController.pageDemo(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+2016-12-23 11:51:38.199  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/androidVer/newAndroidVer],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.AndroidController.newAndroidVer(int)
+2016-12-23 11:51:38.201  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/billbord/addbillboard],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.BillboardInfoController.addbillboard(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:51:38.201  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/billbord/editbill],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.BillboardInfoController.editbill(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:51:38.201  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/billbord/releasebillboard/{area}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.BillboardInfoController.releasedBillboard(java.lang.String)
+2016-12-23 11:51:38.201  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/billbord/getbillboardarea/{area}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.BillboardInfoController.getBillboardarea(java.lang.String)
+2016-12-23 11:51:38.201  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/billbord/changepotation/{id1}/{sort2}/{id2}/{sort1}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.BillboardInfoController.changePotation(int,int,int,int)
+2016-12-23 11:51:38.202  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/billbord/getbillbord/{id}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.BillboardInfoController.getbillbordbyid(int)
+2016-12-23 11:51:38.202  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/frontbill/showbill/{area}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.BillboardInfoFrontController.showBill(java.lang.String)
+2016-12-23 11:51:38.203  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.DemoController.demo(java.lang.String,java.lang.Integer) throws java.lang.Exception
+2016-12-23 11:51:38.203  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pageDemo],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.DemoController.pageDemo(java.lang.String,java.lang.Integer,java.lang.Integer) throws com.eduspace.eduplatform.util.exception.MyException
+2016-12-23 11:51:38.204  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/feedback/getById/{id}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FeedBackController.getFeedback(java.lang.Integer) throws java.lang.Exception
+2016-12-23 11:51:38.204  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/feedback/add],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FeedBackController.addFeed(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:51:38.204  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/feedback/getpage],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FeedBackController.getPageper(int,int,java.lang.String) throws com.eduspace.eduplatform.util.exception.MyException
+2016-12-23 11:51:38.210  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/focus/releasefocus/{belongs}/{area}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FoucusPictureController.releaseFocus(java.lang.String,java.lang.String)
+2016-12-23 11:51:38.210  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/focus/changepotaion/{id1}/{sort2}/{id2}/{sort1}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FoucusPictureController.changepotaion(int,int,int,int)
+2016-12-23 11:51:38.210  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/focus/exitfocus],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FoucusPictureController.FocusPicture(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:51:38.210  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/focus/getfocusarea/{belongs}/{area}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FoucusPictureController.getfocusarea(java.lang.String,java.lang.String)
+2016-12-23 11:51:38.211  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/focus/addfocus],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FoucusPictureController.getFoucspicture(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:51:38.211  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/focus/getfocuspicture/{id}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FoucusPictureController.getFocusPictureDisable(java.lang.Integer)
+2016-12-23 11:51:38.214  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/frontfocus/showfocus/{belongs}/{area}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.FoucusPictureFrontController.showFocus(java.lang.String,java.lang.String)
+2016-12-23 11:51:38.216  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goodsinfo/hotSearch],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.GoodsInfoController.hotSearch(java.lang.String,int)
+2016-12-23 11:51:38.216  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goodsinfo/editgoods],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.GoodsInfoController.editGoods(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:51:38.216  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goodsinfo/getgoods/{id}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.GoodsInfoController.getGoodsbyid(int)
+2016-12-23 11:51:38.216  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goodsinfo/releasedgoods/{belongs}/{area}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.GoodsInfoController.releasedGoods(java.lang.String,java.lang.String)
+2016-12-23 11:51:38.217  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goodsinfo/addgoods],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.GoodsInfoController.addGoodsinfo(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:51:38.217  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goodsinfo/getgoodsarea/{belongs}/{area}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.GoodsInfoController.getGoodsarea(java.lang.String,java.lang.String)
+2016-12-23 11:51:38.217  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goodsinfo/changepotation/{id1}/{sort2}/{id2}/{sort1}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.GoodsInfoController.changePotation(int,int,int,int)
+2016-12-23 11:51:38.218  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/frontgoods/show],methods=[GET]}" onto public java.util.List<com.yijiajiao.oss.domain.vo.GoodsBean> com.yijiajiao.oss.controller.GoodsInfoFrontController.getShowGoods()
+2016-12-23 11:51:38.218  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/frontgoods/getGoods/{belongs}/{area}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.GoodsInfoFrontController.getGoods(java.lang.String,java.lang.String)
+2016-12-23 11:51:38.219  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/integral/add],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.IntegralRuleController.add(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:51:38.219  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/integral/getList],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.IntegralRuleController.getList(java.lang.Integer,java.lang.Integer)
+2016-12-23 11:51:38.219  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/integral/getById],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.IntegralRuleController.getIntegration(int,java.lang.Double)
+2016-12-23 11:51:38.220  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/integral/edit],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.IntegralRuleController.exitIntegration(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:51:38.221  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/message/getmessage/{id}],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.MessageController.getMessage(int)
+2016-12-23 11:51:38.221  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/message/sendmessage],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.MessageController.sendMessae(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:51:38.221  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/message/getfrontpages],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.MessageController.getFrontPages(int,int,java.lang.String,java.lang.String)
+2016-12-23 11:51:38.222  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/message/sendmessageall],methods=[POST]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.MessageController.sendMessaeAll(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-23 11:51:38.222  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/message/getpage],methods=[GET]}" onto public com.yijiajiao.oss.util.ResultWrapper com.yijiajiao.oss.controller.MessageController.getPage(int,int,java.lang.String)
+2016-12-23 11:51:38.227  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-12-23 11:51:38.227  INFO 30984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-12-23 11:51:38.314  INFO 30984 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/druid/*] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-23 11:51:38.314  INFO 30984 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-23 11:51:38.315  INFO 30984 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-23 11:51:38.446  INFO 30984 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionProcess
+2016-12-23 11:51:38.536  INFO 30984 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-23 11:51:39.483  INFO 30984 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-23 11:51:39.483  INFO 30984 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+2016-12-23 11:51:39.484  INFO 30984 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-23 11:51:39.485  INFO 30984 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-23 11:51:39.486  INFO 30984 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2016-12-23 11:51:39.486  INFO 30984 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-23 11:51:39.487  INFO 30984 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-23 11:51:39.487  INFO 30984 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-23 11:51:39.488  INFO 30984 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2016-12-23 11:51:39.488  INFO 30984 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2016-12-23 11:51:39.491  INFO 30984 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-23 11:51:39.492  INFO 30984 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/jolokia/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.actuate.endpoint.mvc.JolokiaMvcEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2016-12-23 11:51:39.494  INFO 30984 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2016-12-23 11:51:39.494  INFO 30984 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-23 11:51:39.496  INFO 30984 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-23 11:51:40.086  INFO 30984 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-12-23 11:51:40.087  INFO 30984 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2016-12-23 11:51:40.093  INFO 30984 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2016-12-23 11:51:40.097  INFO 30984 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2016-12-23 11:51:40.181  INFO 30984 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2016-12-23 11:51:40.232  INFO 30984 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 7002 (http)
+2016-12-23 11:51:40.238  INFO 30984 --- [main] com.yijiajiao.oss.OssApplication         : Started OssApplication in 11.777 seconds (JVM running for 17.578)
+2016-12-23 11:52:20.019  INFO 30984 --- [http-nio-7002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-12-23 11:52:20.019  INFO 30984 --- [http-nio-7002-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-12-23 11:52:20.040  INFO 30984 --- [http-nio-7002-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2016-12-23 11:52:20.191  INFO 30984 --- [http-nio-7002-exec-1] com.yijiajiao.oss.filter.DumpFilter      : 请求地址: http://lei:7002/fronr
+2016-12-23 11:52:20.194  INFO 30984 --- [http-nio-7002-exec-1] com.yijiajiao.oss.filter.DumpFilter      : 来源地址: fe80:0:0:0:e810:b5a0:98ff:b219%7
+2016-12-23 11:52:20.194  INFO 30984 --- [http-nio-7002-exec-1] com.yijiajiao.oss.filter.DumpFilter      : 请求参数: null
+2016-12-23 11:52:20.194  INFO 30984 --- [http-nio-7002-exec-1] com.yijiajiao.oss.filter.DumpFilter      : 涉及到的方法为: GET
+2016-12-23 11:52:20.194  INFO 30984 --- [http-nio-7002-exec-1] com.yijiajiao.oss.filter.DumpFilter      : token: null
+2016-12-23 11:52:20.200  INFO 30984 --- [http-nio-7002-exec-1] com.yijiajiao.oss.filter.DumpFilter      : jsessionId: 1BDA1C730F1132E114E2E6E8FFC36D79
+2016-12-23 11:52:20.200  INFO 30984 --- [http-nio-7002-exec-1] com.yijiajiao.oss.filter.DumpFilter      : Content-Type: null
+2016-12-23 11:52:20.200  INFO 30984 --- [http-nio-7002-exec-1] com.yijiajiao.oss.filter.DumpFilter      : CharacterEncoding: utf-8
+2016-12-23 11:52:20.200  INFO 30984 --- [http-nio-7002-exec-1] com.yijiajiao.oss.filter.DumpFilter      : Request body ->>>
+  
+2016-12-23 11:52:20.236  INFO 30984 --- [http-nio-7002-exec-1] com.yijiajiao.oss.filter.DumpFilter      : Response content:  ->>>
+
+2016-12-23 11:52:20.238  INFO 30984 --- [http-nio-7002-exec-1] com.yijiajiao.oss.filter.DumpFilter      : 本次请求耗时（毫秒）：47
+2016-12-23 11:52:24.976  INFO 30984 --- [http-nio-7002-exec-2] com.yijiajiao.oss.filter.DumpFilter      : 请求地址: http://lei:7002/front
+2016-12-23 11:52:24.976  INFO 30984 --- [http-nio-7002-exec-2] com.yijiajiao.oss.filter.DumpFilter      : 来源地址: fe80:0:0:0:e810:b5a0:98ff:b219%7
+2016-12-23 11:52:24.976  INFO 30984 --- [http-nio-7002-exec-2] com.yijiajiao.oss.filter.DumpFilter      : 请求参数: null
+2016-12-23 11:52:24.976  INFO 30984 --- [http-nio-7002-exec-2] com.yijiajiao.oss.filter.DumpFilter      : 涉及到的方法为: GET
+2016-12-23 11:52:24.976  INFO 30984 --- [http-nio-7002-exec-2] com.yijiajiao.oss.filter.DumpFilter      : token: null
+2016-12-23 11:52:24.976  INFO 30984 --- [http-nio-7002-exec-2] com.yijiajiao.oss.filter.DumpFilter      : jsessionId: 1BDA1C730F1132E114E2E6E8FFC36D79
+2016-12-23 11:52:24.976  INFO 30984 --- [http-nio-7002-exec-2] com.yijiajiao.oss.filter.DumpFilter      : Content-Type: null
+2016-12-23 11:52:24.976  INFO 30984 --- [http-nio-7002-exec-2] com.yijiajiao.oss.filter.DumpFilter      : CharacterEncoding: utf-8
+2016-12-23 11:52:24.977  INFO 30984 --- [http-nio-7002-exec-2] com.yijiajiao.oss.filter.DumpFilter      : Request body ->>>
+  
+2016-12-23 11:52:24.982  INFO 30984 --- [http-nio-7002-exec-2] com.yijiajiao.oss.filter.DumpFilter      : Response content:  ->>>
+
+2016-12-23 11:52:24.982  INFO 30984 --- [http-nio-7002-exec-2] com.yijiajiao.oss.filter.DumpFilter      : 本次请求耗时（毫秒）：6
+2016-12-23 11:52:30.046  INFO 30984 --- [http-nio-7002-exec-3] com.yijiajiao.oss.filter.DumpFilter      : 请求地址: http://lei:7002/frontgoods
+2016-12-23 11:52:30.047  INFO 30984 --- [http-nio-7002-exec-3] com.yijiajiao.oss.filter.DumpFilter      : 来源地址: fe80:0:0:0:e810:b5a0:98ff:b219%7
+2016-12-23 11:52:30.047  INFO 30984 --- [http-nio-7002-exec-3] com.yijiajiao.oss.filter.DumpFilter      : 请求参数: null
+2016-12-23 11:52:30.048  INFO 30984 --- [http-nio-7002-exec-3] com.yijiajiao.oss.filter.DumpFilter      : 涉及到的方法为: GET
+2016-12-23 11:52:30.048  INFO 30984 --- [http-nio-7002-exec-3] com.yijiajiao.oss.filter.DumpFilter      : token: null
+2016-12-23 11:52:30.048  INFO 30984 --- [http-nio-7002-exec-3] com.yijiajiao.oss.filter.DumpFilter      : jsessionId: 1BDA1C730F1132E114E2E6E8FFC36D79
+2016-12-23 11:52:30.048  INFO 30984 --- [http-nio-7002-exec-3] com.yijiajiao.oss.filter.DumpFilter      : Content-Type: null
+2016-12-23 11:52:30.048  INFO 30984 --- [http-nio-7002-exec-3] com.yijiajiao.oss.filter.DumpFilter      : CharacterEncoding: utf-8
+2016-12-23 11:52:30.049  INFO 30984 --- [http-nio-7002-exec-3] com.yijiajiao.oss.filter.DumpFilter      : Request body ->>>
+  
+2016-12-23 11:52:30.054  INFO 30984 --- [http-nio-7002-exec-3] com.yijiajiao.oss.filter.DumpFilter      : Response content:  ->>>
+
+2016-12-23 11:52:30.055  INFO 30984 --- [http-nio-7002-exec-3] com.yijiajiao.oss.filter.DumpFilter      : 本次请求耗时（毫秒）：9
+2016-12-23 11:53:03.718  INFO 30984 --- [http-nio-7002-exec-4] com.yijiajiao.oss.filter.DumpFilter      : 请求地址: http://lei:7002/frontgoods/getGoods/7/3
+2016-12-23 11:53:03.719  INFO 30984 --- [http-nio-7002-exec-4] com.yijiajiao.oss.filter.DumpFilter      : 来源地址: fe80:0:0:0:e810:b5a0:98ff:b219%7
+2016-12-23 11:53:03.719  INFO 30984 --- [http-nio-7002-exec-4] com.yijiajiao.oss.filter.DumpFilter      : 请求参数: null
+2016-12-23 11:53:03.719  INFO 30984 --- [http-nio-7002-exec-4] com.yijiajiao.oss.filter.DumpFilter      : 涉及到的方法为: GET
+2016-12-23 11:53:03.721  INFO 30984 --- [http-nio-7002-exec-4] com.yijiajiao.oss.filter.DumpFilter      : token: null
+2016-12-23 11:53:03.721  INFO 30984 --- [http-nio-7002-exec-4] com.yijiajiao.oss.filter.DumpFilter      : jsessionId: 1BDA1C730F1132E114E2E6E8FFC36D79
+2016-12-23 11:53:03.721  INFO 30984 --- [http-nio-7002-exec-4] com.yijiajiao.oss.filter.DumpFilter      : Content-Type: null
+2016-12-23 11:53:03.722  INFO 30984 --- [http-nio-7002-exec-4] com.yijiajiao.oss.filter.DumpFilter      : CharacterEncoding: utf-8
+2016-12-23 11:53:03.722  INFO 30984 --- [http-nio-7002-exec-4] com.yijiajiao.oss.filter.DumpFilter      : Request body ->>>
+  
+2016-12-23 11:53:03.793  INFO 30984 --- [http-nio-7002-exec-5] com.yijiajiao.oss.filter.DumpFilter      : 请求地址: http://lei:7002/frontgoods/getGoods/7/3
+2016-12-23 11:53:03.793  INFO 30984 --- [http-nio-7002-exec-5] com.yijiajiao.oss.filter.DumpFilter      : 来源地址: fe80:0:0:0:e810:b5a0:98ff:b219%7
+2016-12-23 11:53:03.794  INFO 30984 --- [http-nio-7002-exec-5] com.yijiajiao.oss.filter.DumpFilter      : 请求参数: null
+2016-12-23 11:53:03.794  INFO 30984 --- [http-nio-7002-exec-5] com.yijiajiao.oss.filter.DumpFilter      : 涉及到的方法为: GET
+2016-12-23 11:53:03.794  INFO 30984 --- [http-nio-7002-exec-5] com.yijiajiao.oss.filter.DumpFilter      : token: null
+2016-12-23 11:53:03.794  INFO 30984 --- [http-nio-7002-exec-5] com.yijiajiao.oss.filter.DumpFilter      : jsessionId: 1BDA1C730F1132E114E2E6E8FFC36D79
+2016-12-23 11:53:03.794  INFO 30984 --- [http-nio-7002-exec-5] com.yijiajiao.oss.filter.DumpFilter      : Content-Type: null
+2016-12-23 11:53:03.794  INFO 30984 --- [http-nio-7002-exec-5] com.yijiajiao.oss.filter.DumpFilter      : CharacterEncoding: utf-8
+2016-12-23 11:53:03.794  INFO 30984 --- [http-nio-7002-exec-5] com.yijiajiao.oss.filter.DumpFilter      : Request body ->>>
+  
+2016-12-23 11:53:04.511  INFO 30984 --- [http-nio-7002-exec-5] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22100/yijiajiao-wares/wares/queryWaresByIds?ids=207,38,39,40
+2016-12-23 11:53:04.524  INFO 30984 --- [http-nio-7002-exec-4] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22100/yijiajiao-wares/wares/queryWaresByIds?ids=207,38,39,40
+2016-12-23 11:53:04.678  INFO 30984 --- [http-nio-7002-exec-5] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22090/yijiajiao-user/finduserinfobyid
+2016-12-23 11:53:04.727  INFO 30984 --- [http-nio-7002-exec-4] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22090/yijiajiao-user/finduserinfobyid
+2016-12-23 11:53:05.089  INFO 30984 --- [http-nio-7002-exec-4] com.yijiajiao.oss.filter.DumpFilter      : Response content:  ->>>
+{
+  "code" : "200",
+  "requestId" : "",
+  "message" : "success",
+  "result" : {
+    "ads" : "",
+    "url" : "",
+    "stageCode" : "1",
+    "waresType" : "4",
+    "list" : [ {
+      "openId" : "b21b351c-d142-4789-a165-efe918242913",
+      "name" : "小斌",
+      "waresType" : 4,
+      "waresId" : 207,
+      "curriculumName" : "大班1010",
+      "img" : "http://itutorsale.b0.upaiyun.com/8ad19ff324c1b607b2db17d614558237.jpg",
+      "isYjj" : "1",
+      "teachPic" : "http://itutorsale.b0.upaiyun.com/69cdaf614334eef3469d435d4629bb92.jpg",
+      "stageCode" : "1",
+      "gradeCode" : "",
+      "gradeName" : "",
+      "url" : "",
+      "price" : 0.1,
+      "popularity" : 233,
+      "courceTime" : "",
+      "easyPea" : "",
+      "didescriptions" : "",
+      "subject" : "",
+      "storeScore" : 0.0,
+      "goodRange" : "",
+      "referalWay" : "",
+      "storeName" : "",
+      "liveTime" : "",
+      "storePic" : "",
+      "brief" : "",
+      "introduction" : ""
+    }, {
+      "openId" : "b21b351c-d142-4789-a165-efe918242913",
+      "name" : "小斌",
+      "waresType" : 3,
+      "waresId" : 38,
+      "curriculumName" : "0901 数学专题",
+      "img" : "http://itutorsale.b0.upaiyun.com/f7e878970df6ffe1bdfdfb77b18a7f83.png",
+      "isYjj" : "1",
+      "teachPic" : "http://itutorsale.b0.upaiyun.com/69cdaf614334eef3469d435d4629bb92.jpg",
+      "stageCode" : "1",
+      "gradeCode" : "",
+      "gradeName" : "",
+      "url" : "",
+      "price" : 0.01,
+      "popularity" : 163,
+      "courceTime" : "",
+      "easyPea" : "",
+      "didescriptions" : "",
+      "subject" : "",
+      "storeScore" : 0.0,
+      "goodRange" : "",
+      "referalWay" : "",
+      "storeName" : "",
+      "liveTime" : "",
+      "storePic" : "",
+      "brief" : "",
+      "introduction" : ""
+    }, {
+      "openId" : "b21b351c-d142-4789-a165-efe918242913",
+      "name" : "小斌",
+      "waresType" : 1,
+      "waresId" : 39,
+      "curriculumName" : "0901 数学 一对一",
+      "img" : "http://itutorsale.b0.upaiyun.com/90ee1af1ed8e219260a23a828b899898.png",
+      "isYjj" : "1",
+      "teachPic" : "http://itutorsale.b0.upaiyun.com/69cdaf614334eef3469d435d4629bb92.jpg",
+      "stageCode" : "1",
+      "gradeCode" : "",
+      "gradeName" : "",
+      "url" : "",
+      "price" : 0.01,
+      "popularity" : 120,
+      "courceTime" : "",
+      "easyPea" : "",
+      "didescriptions" : "",
+      "subject" : "",
+      "storeScore" : 0.0,
+      "goodRange" : "",
+      "referalWay" : "",
+      "storeName" : "",
+      "liveTime" : "",
+      "storePic" : "",
+      "brief" : "",
+      "introduction" : ""
+    }, {
+      "openId" : "b21b351c-d142-4789-a165-efe918242913",
+      "name" : "小斌",
+      "waresType" : 4,
+      "waresId" : 40,
+      "curriculumName" : "0901 大班课",
+      "img" : "http://itutorsale.b0.upaiyun.com/1f6b0dcd361910c10344892b07b66241.png",
+      "isYjj" : "1",
+      "teachPic" : "http://itutorsale.b0.upaiyun.com/69cdaf614334eef3469d435d4629bb92.jpg",
+      "stageCode" : "1",
+      "gradeCode" : "",
+      "gradeName" : "",
+      "url" : "",
+      "price" : 0.1,
+      "popularity" : 73,
+      "courceTime" : "",
+      "easyPea" : "",
+      "didescriptions" : "",
+      "subject" : "",
+      "storeScore" : 0.0,
+      "goodRange" : "",
+      "referalWay" : "",
+      "storeName" : "",
+      "liveTime" : "",
+      "storePic" : "",
+      "brief" : "",
+      "introduction" : ""
+    } ]
+  }
+}
+2016-12-23 11:53:05.089  INFO 30984 --- [http-nio-7002-exec-4] com.yijiajiao.oss.filter.DumpFilter      : 本次请求耗时（毫秒）：1371
+2016-12-23 11:53:05.089  INFO 30984 --- [http-nio-7002-exec-5] com.yijiajiao.oss.filter.DumpFilter      : Response content:  ->>>
+{
+  "code" : "200",
+  "requestId" : "",
+  "message" : "success",
+  "result" : {
+    "ads" : "",
+    "url" : "",
+    "stageCode" : "1",
+    "waresType" : "4",
+    "list" : [ {
+      "openId" : "b21b351c-d142-4789-a165-efe918242913",
+      "name" : "小斌",
+      "waresType" : 4,
+      "waresId" : 207,
+      "curriculumName" : "大班1010",
+      "img" : "http://itutorsale.b0.upaiyun.com/8ad19ff324c1b607b2db17d614558237.jpg",
+      "isYjj" : "1",
+      "teachPic" : "http://itutorsale.b0.upaiyun.com/69cdaf614334eef3469d435d4629bb92.jpg",
+      "stageCode" : "1",
+      "gradeCode" : "",
+      "gradeName" : "",
+      "url" : "",
+      "price" : 0.1,
+      "popularity" : 233,
+      "courceTime" : "",
+      "easyPea" : "",
+      "didescriptions" : "",
+      "subject" : "",
+      "storeScore" : 0.0,
+      "goodRange" : "",
+      "referalWay" : "",
+      "storeName" : "",
+      "liveTime" : "",
+      "storePic" : "",
+      "brief" : "",
+      "introduction" : ""
+    }, {
+      "openId" : "b21b351c-d142-4789-a165-efe918242913",
+      "name" : "小斌",
+      "waresType" : 3,
+      "waresId" : 38,
+      "curriculumName" : "0901 数学专题",
+      "img" : "http://itutorsale.b0.upaiyun.com/f7e878970df6ffe1bdfdfb77b18a7f83.png",
+      "isYjj" : "1",
+      "teachPic" : "http://itutorsale.b0.upaiyun.com/69cdaf614334eef3469d435d4629bb92.jpg",
+      "stageCode" : "1",
+      "gradeCode" : "",
+      "gradeName" : "",
+      "url" : "",
+      "price" : 0.01,
+      "popularity" : 163,
+      "courceTime" : "",
+      "easyPea" : "",
+      "didescriptions" : "",
+      "subject" : "",
+      "storeScore" : 0.0,
+      "goodRange" : "",
+      "referalWay" : "",
+      "storeName" : "",
+      "liveTime" : "",
+      "storePic" : "",
+      "brief" : "",
+      "introduction" : ""
+    }, {
+      "openId" : "b21b351c-d142-4789-a165-efe918242913",
+      "name" : "小斌",
+      "waresType" : 1,
+      "waresId" : 39,
+      "curriculumName" : "0901 数学 一对一",
+      "img" : "http://itutorsale.b0.upaiyun.com/90ee1af1ed8e219260a23a828b899898.png",
+      "isYjj" : "1",
+      "teachPic" : "http://itutorsale.b0.upaiyun.com/69cdaf614334eef3469d435d4629bb92.jpg",
+      "stageCode" : "1",
+      "gradeCode" : "",
+      "gradeName" : "",
+      "url" : "",
+      "price" : 0.01,
+      "popularity" : 120,
+      "courceTime" : "",
+      "easyPea" : "",
+      "didescriptions" : "",
+      "subject" : "",
+      "storeScore" : 0.0,
+      "goodRange" : "",
+      "referalWay" : "",
+      "storeName" : "",
+      "liveTime" : "",
+      "storePic" : "",
+      "brief" : "",
+      "introduction" : ""
+    }, {
+      "openId" : "b21b351c-d142-4789-a165-efe918242913",
+      "name" : "小斌",
+      "waresType" : 4,
+      "waresId" : 40,
+      "curriculumName" : "0901 大班课",
+      "img" : "http://itutorsale.b0.upaiyun.com/1f6b0dcd361910c10344892b07b66241.png",
+      "isYjj" : "1",
+      "teachPic" : "http://itutorsale.b0.upaiyun.com/69cdaf614334eef3469d435d4629bb92.jpg",
+      "stageCode" : "1",
+      "gradeCode" : "",
+      "gradeName" : "",
+      "url" : "",
+      "price" : 0.1,
+      "popularity" : 73,
+      "courceTime" : "",
+      "easyPea" : "",
+      "didescriptions" : "",
+      "subject" : "",
+      "storeScore" : 0.0,
+      "goodRange" : "",
+      "referalWay" : "",
+      "storeName" : "",
+      "liveTime" : "",
+      "storePic" : "",
+      "brief" : "",
+      "introduction" : ""
+    } ]
+  }
+}
+2016-12-23 11:53:05.089  INFO 30984 --- [http-nio-7002-exec-5] com.yijiajiao.oss.filter.DumpFilter      : 本次请求耗时（毫秒）：1296
+2016-12-23 11:53:36.913  INFO 30984 --- [http-nio-7002-exec-6] com.yijiajiao.oss.filter.DumpFilter      : 请求地址: http://lei:7002/frontgoods/getGoods/7/4
+2016-12-23 11:53:36.913  INFO 30984 --- [http-nio-7002-exec-6] com.yijiajiao.oss.filter.DumpFilter      : 来源地址: fe80:0:0:0:e810:b5a0:98ff:b219%7
+2016-12-23 11:53:36.914  INFO 30984 --- [http-nio-7002-exec-6] com.yijiajiao.oss.filter.DumpFilter      : 请求参数: null
+2016-12-23 11:53:36.914  INFO 30984 --- [http-nio-7002-exec-6] com.yijiajiao.oss.filter.DumpFilter      : 涉及到的方法为: GET
+2016-12-23 11:53:36.914  INFO 30984 --- [http-nio-7002-exec-6] com.yijiajiao.oss.filter.DumpFilter      : token: null
+2016-12-23 11:53:36.914  INFO 30984 --- [http-nio-7002-exec-6] com.yijiajiao.oss.filter.DumpFilter      : jsessionId: 1BDA1C730F1132E114E2E6E8FFC36D79
+2016-12-23 11:53:36.914  INFO 30984 --- [http-nio-7002-exec-6] com.yijiajiao.oss.filter.DumpFilter      : Content-Type: null
+2016-12-23 11:53:36.915  INFO 30984 --- [http-nio-7002-exec-6] com.yijiajiao.oss.filter.DumpFilter      : CharacterEncoding: utf-8
+2016-12-23 11:53:36.915  INFO 30984 --- [http-nio-7002-exec-6] com.yijiajiao.oss.filter.DumpFilter      : Request body ->>>
+  
+2016-12-23 11:53:36.967  INFO 30984 --- [http-nio-7002-exec-7] com.yijiajiao.oss.filter.DumpFilter      : 请求地址: http://lei:7002/frontgoods/getGoods/7/4
+2016-12-23 11:53:36.967  INFO 30984 --- [http-nio-7002-exec-7] com.yijiajiao.oss.filter.DumpFilter      : 来源地址: fe80:0:0:0:e810:b5a0:98ff:b219%7
+2016-12-23 11:53:36.967  INFO 30984 --- [http-nio-7002-exec-7] com.yijiajiao.oss.filter.DumpFilter      : 请求参数: null
+2016-12-23 11:53:36.967  INFO 30984 --- [http-nio-7002-exec-7] com.yijiajiao.oss.filter.DumpFilter      : 涉及到的方法为: GET
+2016-12-23 11:53:36.967  INFO 30984 --- [http-nio-7002-exec-7] com.yijiajiao.oss.filter.DumpFilter      : token: null
+2016-12-23 11:53:36.967  INFO 30984 --- [http-nio-7002-exec-7] com.yijiajiao.oss.filter.DumpFilter      : jsessionId: 1BDA1C730F1132E114E2E6E8FFC36D79
+2016-12-23 11:53:36.968  INFO 30984 --- [http-nio-7002-exec-7] com.yijiajiao.oss.filter.DumpFilter      : Content-Type: null
+2016-12-23 11:53:36.968  INFO 30984 --- [http-nio-7002-exec-7] com.yijiajiao.oss.filter.DumpFilter      : CharacterEncoding: utf-8
+2016-12-23 11:53:36.968  INFO 30984 --- [http-nio-7002-exec-7] com.yijiajiao.oss.filter.DumpFilter      : Request body ->>>
+  
+2016-12-23 11:53:37.066  INFO 30984 --- [http-nio-7002-exec-6] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22090/yijiajiao-user/finduserinfobyid
+2016-12-23 11:53:37.069  INFO 30984 --- [http-nio-7002-exec-7] com.yijiajiao.oss.util.SolutionUtil      : 
+请求其它系统路径：http://211.157.179.221:22090/yijiajiao-user/finduserinfobyid
+2016-12-23 11:53:37.291  INFO 30984 --- [http-nio-7002-exec-7] c.y.o.s.impl.GoodsInfoFrontServiceImpl   : 正确信息：{list=[{username=15000001000, name=五月天, provinceCode=530000, cityCode=530100, areaCode=530101, provinceName=云南省, cityName=昆明市, areaName=市辖区, storeScore=70, storePic=http://haotibenapk.b0.upaiyun.com/test/201611111001288541R6.jpg, teachPic=http://itutorsale.b0.upaiyun.com/edb99e07e92072d3628d062e916a1087.png, label=托福口语满分**, customLabel=, introduction=破XPwry一, brief=人人高兴, userOpenId=11b0d489-02a6-4b54-976d-4fc07be62f31, storeName=五月天天天向上, video_permission=0, stageName=小学, subjectName=数学, count=0, gradeModel=[{gradeName=一年级, gradeCode=11}, {gradeName=二年级, gradeCode=12}, {gradeName=三年级, gradeCode=13}, {gradeName=四年级, gradeCode=14}, {gradeName=五年级, gradeCode=15}, {gradeName=六年级, gradeCode=16}], popularity=25, facingTeachPermission=1, pic=http://itutorsale.b0.upaiyun.com/2c64700cd76081996cace321b27a045e.png, status_st=3, invite_code=, invite_selfcode=13AD5F0D}, {username=18103905066, name=刘玲玲, provinceCode=110000, cityCode=110100, areaCode=110101, provinceName=北京市, cityName=北京市, areaName=东城区, storeScore=0, storePic=http://itutorsale.b0.upaiyun.com/7ccde4bfc728ea98f5af28744f0df9c6.png, teachPic=http://itutorsale.b0.upaiyun.com/f3ebc15e592944c84b0ab861220f011c.png, label=, customLabel=, introduction=天天向上, brief=天天向上, userOpenId=34f8b960-1b8c-45aa-91d0-7be00670dfdd, storeName=钱守旺导师, video_permission=0, stageName=小学, subjectName=数学, count=0, gradeModel=[{gradeName=一年级, gradeCode=11}, {gradeName=二年级, gradeCode=12}, {gradeName=三年级, gradeCode=13}, {gradeName=四年级, gradeCode=14}, {gradeName=五年级, gradeCode=15}, {gradeName=六年级, gradeCode=16}], popularity=25, facingTeachPermission=1, pic=null, status_st=3, invite_code=, invite_selfcode=D68EB4B4}, {username=18103905066, name=刘玲玲, provinceCode=110000, cityCode=110100, areaCode=110101, provinceName=北京市, cityName=北京市, areaName=东城区, storeScore=0, storePic=http://itutorsale.b0.upaiyun.com/7ccde4bfc728ea98f5af28744f0df9c6.png, teachPic=http://itutorsale.b0.upaiyun.com/f3ebc15e592944c84b0ab861220f011c.png, label=, customLabel=, introduction=天天向上, brief=天天向上, userOpenId=34f8b960-1b8c-45aa-91d0-7be00670dfdd, storeName=钱守旺导师, video_permission=0, stageName=小学, subjectName=数学, count=0, gradeModel=[{gradeName=一年级, gradeCode=11}, {gradeName=二年级, gradeCode=12}, {gradeName=三年级, gradeCode=13}, {gradeName=四年级, gradeCode=14}, {gradeName=五年级, gradeCode=15}, {gradeName=六年级, gradeCode=16}], popularity=25, facingTeachPermission=1, pic=null, status_st=3, invite_code=, invite_selfcode=D68EB4B4}, {username=15011112222, name=王彩娟, provinceCode=110000, cityCode=110100, areaCode=110101, provinceName=北京市, cityName=北京市, areaName=东城区, storeScore=15, storePic=http://itutorsale.b0.upaiyun.com/b83b1a0e85a99a54e470a0a047ef5ec4.png, teachPic=http://itutorsale.b0.upaiyun.com/37ceb4e411bf311a1a4e4473f7bda747.png, label=, customLabel=, introduction=455, brief=123, userOpenId=a444f0b3-af66-4097-94eb-2fe34283b4db, storeName=王彩娟, video_permission=0, stageName=小学, subjectName=数学, count=0, gradeModel=[{gradeName=一年级, gradeCode=11}, {gradeName=二年级, gradeCode=12}, {gradeName=三年级, gradeCode=13}, {gradeName=四年级, gradeCode=14}, {gradeName=五年级, gradeCode=15}, {gradeName=六年级, gradeCode=16}], popularity=105, facingTeachPermission=1, pic=, status_st=3, invite_code=, invite_selfcode=1d7792709897ae1a2688fedf38c2a0b3}]}
+2016-12-23 11:53:37.294  INFO 30984 --- [http-nio-7002-exec-7] com.yijiajiao.oss.filter.DumpFilter      : Response content:  ->>>
+{
+  "code" : "200",
+  "requestId" : "",
+  "message" : "success",
+  "result" : {
+    "ads" : "",
+    "url" : "",
+    "stageCode" : "",
+    "waresType" : "0",
+    "list" : [ {
+      "openId" : "11b0d489-02a6-4b54-976d-4fc07be62f31",
+      "name" : "五月天",
+      "waresType" : 0,
+      "waresId" : 0,
+      "curriculumName" : "",
+      "img" : "",
+      "isYjj" : "",
+      "teachPic" : "",
+      "stageCode" : "",
+      "gradeCode" : "16",
+      "gradeName" : "六年级",
+      "url" : "",
+      "price" : 0.0,
+      "popularity" : 25,
+      "courceTime" : "",
+      "easyPea" : "",
+      "didescriptions" : "",
+      "subject" : "数学",
+      "storeScore" : 70.0,
+      "goodRange" : "",
+      "referalWay" : "",
+      "storeName" : "",
+      "liveTime" : "",
+      "storePic" : "http://itutorsale.b0.upaiyun.com/edb99e07e92072d3628d062e916a1087.png",
+      "brief" : "人人高兴",
+      "introduction" : "破XPwry一"
+    }, {
+      "openId" : "34f8b960-1b8c-45aa-91d0-7be00670dfdd",
+      "name" : "刘玲玲",
+      "waresType" : 0,
+      "waresId" : 0,
+      "curriculumName" : "",
+      "img" : "",
+      "isYjj" : "",
+      "teachPic" : "",
+      "stageCode" : "",
+      "gradeCode" : "16",
+      "gradeName" : "六年级",
+      "url" : "",
+      "price" : 0.0,
+      "popularity" : 25,
+      "courceTime" : "",
+      "easyPea" : "",
+      "didescriptions" : "",
+      "subject" : "数学",
+      "storeScore" : 0.0,
+      "goodRange" : "",
+      "referalWay" : "",
+      "storeName" : "",
+      "liveTime" : "",
+      "storePic" : "http://itutorsale.b0.upaiyun.com/f3ebc15e592944c84b0ab861220f011c.png",
+      "brief" : "天天向上",
+      "introduction" : "天天向上"
+    }, {
+      "openId" : "34f8b960-1b8c-45aa-91d0-7be00670dfdd",
+      "name" : "刘玲玲",
+      "waresType" : 0,
+      "waresId" : 0,
+      "curriculumName" : "",
+      "img" : "",
+      "isYjj" : "",
+      "teachPic" : "",
+      "stageCode" : "",
+      "gradeCode" : "16",
+      "gradeName" : "六年级",
+      "url" : "",
+      "price" : 0.0,
+      "popularity" : 25,
+      "courceTime" : "",
+      "easyPea" : "",
+      "didescriptions" : "",
+      "subject" : "数学",
+      "storeScore" : 0.0,
+      "goodRange" : "",
+      "referalWay" : "",
+      "storeName" : "",
+      "liveTime" : "",
+      "storePic" : "http://itutorsale.b0.upaiyun.com/f3ebc15e592944c84b0ab861220f011c.png",
+      "brief" : "天天向上",
+      "introduction" : "天天向上"
+    }, {
+      "openId" : "a444f0b3-af66-4097-94eb-2fe34283b4db",
+      "name" : "王彩娟",
+      "waresType" : 0,
+      "waresId" : 0,
+      "curriculumName" : "",
+      "img" : "",
+      "isYjj" : "",
+      "teachPic" : "",
+      "stageCode" : "",
+      "gradeCode" : "16",
+      "gradeName" : "六年级",
+      "url" : "",
+      "price" : 0.0,
+      "popularity" : 105,
+      "courceTime" : "",
+      "easyPea" : "",
+      "didescriptions" : "",
+      "subject" : "数学",
+      "storeScore" : 15.0,
+      "goodRange" : "",
+      "referalWay" : "",
+      "storeName" : "",
+      "liveTime" : "",
+      "storePic" : "http://itutorsale.b0.upaiyun.com/37ceb4e411bf311a1a4e4473f7bda747.png",
+      "brief" : "123",
+      "introduction" : "455"
+    } ]
+  }
+}
+2016-12-23 11:53:37.295  INFO 30984 --- [http-nio-7002-exec-7] com.yijiajiao.oss.filter.DumpFilter      : 本次请求耗时（毫秒）：328
+2016-12-23 11:53:37.310  INFO 30984 --- [http-nio-7002-exec-6] c.y.o.s.impl.GoodsInfoFrontServiceImpl   : 正确信息：{list=[{username=15000001000, name=五月天, provinceCode=530000, cityCode=530100, areaCode=530101, provinceName=云南省, cityName=昆明市, areaName=市辖区, storeScore=70, storePic=http://haotibenapk.b0.upaiyun.com/test/201611111001288541R6.jpg, teachPic=http://itutorsale.b0.upaiyun.com/edb99e07e92072d3628d062e916a1087.png, label=托福口语满分**, customLabel=, introduction=破XPwry一, brief=人人高兴, userOpenId=11b0d489-02a6-4b54-976d-4fc07be62f31, storeName=五月天天天向上, video_permission=0, stageName=小学, subjectName=数学, count=0, gradeModel=[{gradeName=一年级, gradeCode=11}, {gradeName=二年级, gradeCode=12}, {gradeName=三年级, gradeCode=13}, {gradeName=四年级, gradeCode=14}, {gradeName=五年级, gradeCode=15}, {gradeName=六年级, gradeCode=16}], popularity=25, facingTeachPermission=1, pic=http://itutorsale.b0.upaiyun.com/2c64700cd76081996cace321b27a045e.png, status_st=3, invite_code=, invite_selfcode=13AD5F0D}, {username=18103905066, name=刘玲玲, provinceCode=110000, cityCode=110100, areaCode=110101, provinceName=北京市, cityName=北京市, areaName=东城区, storeScore=0, storePic=http://itutorsale.b0.upaiyun.com/7ccde4bfc728ea98f5af28744f0df9c6.png, teachPic=http://itutorsale.b0.upaiyun.com/f3ebc15e592944c84b0ab861220f011c.png, label=, customLabel=, introduction=天天向上, brief=天天向上, userOpenId=34f8b960-1b8c-45aa-91d0-7be00670dfdd, storeName=钱守旺导师, video_permission=0, stageName=小学, subjectName=数学, count=0, gradeModel=[{gradeName=一年级, gradeCode=11}, {gradeName=二年级, gradeCode=12}, {gradeName=三年级, gradeCode=13}, {gradeName=四年级, gradeCode=14}, {gradeName=五年级, gradeCode=15}, {gradeName=六年级, gradeCode=16}], popularity=25, facingTeachPermission=1, pic=null, status_st=3, invite_code=, invite_selfcode=D68EB4B4}, {username=18103905066, name=刘玲玲, provinceCode=110000, cityCode=110100, areaCode=110101, provinceName=北京市, cityName=北京市, areaName=东城区, storeScore=0, storePic=http://itutorsale.b0.upaiyun.com/7ccde4bfc728ea98f5af28744f0df9c6.png, teachPic=http://itutorsale.b0.upaiyun.com/f3ebc15e592944c84b0ab861220f011c.png, label=, customLabel=, introduction=天天向上, brief=天天向上, userOpenId=34f8b960-1b8c-45aa-91d0-7be00670dfdd, storeName=钱守旺导师, video_permission=0, stageName=小学, subjectName=数学, count=0, gradeModel=[{gradeName=一年级, gradeCode=11}, {gradeName=二年级, gradeCode=12}, {gradeName=三年级, gradeCode=13}, {gradeName=四年级, gradeCode=14}, {gradeName=五年级, gradeCode=15}, {gradeName=六年级, gradeCode=16}], popularity=25, facingTeachPermission=1, pic=null, status_st=3, invite_code=, invite_selfcode=D68EB4B4}, {username=15011112222, name=王彩娟, provinceCode=110000, cityCode=110100, areaCode=110101, provinceName=北京市, cityName=北京市, areaName=东城区, storeScore=15, storePic=http://itutorsale.b0.upaiyun.com/b83b1a0e85a99a54e470a0a047ef5ec4.png, teachPic=http://itutorsale.b0.upaiyun.com/37ceb4e411bf311a1a4e4473f7bda747.png, label=, customLabel=, introduction=455, brief=123, userOpenId=a444f0b3-af66-4097-94eb-2fe34283b4db, storeName=王彩娟, video_permission=0, stageName=小学, subjectName=数学, count=0, gradeModel=[{gradeName=一年级, gradeCode=11}, {gradeName=二年级, gradeCode=12}, {gradeName=三年级, gradeCode=13}, {gradeName=四年级, gradeCode=14}, {gradeName=五年级, gradeCode=15}, {gradeName=六年级, gradeCode=16}], popularity=105, facingTeachPermission=1, pic=, status_st=3, invite_code=, invite_selfcode=1d7792709897ae1a2688fedf38c2a0b3}]}
+2016-12-23 11:53:37.328  INFO 30984 --- [http-nio-7002-exec-6] com.yijiajiao.oss.filter.DumpFilter      : Response content:  ->>>
+{
+  "code" : "200",
+  "requestId" : "",
+  "message" : "success",
+  "result" : {
+    "ads" : "",
+    "url" : "",
+    "stageCode" : "",
+    "waresType" : "0",
+    "list" : [ {
+      "openId" : "11b0d489-02a6-4b54-976d-4fc07be62f31",
+      "name" : "五月天",
+      "waresType" : 0,
+      "waresId" : 0,
+      "curriculumName" : "",
+      "img" : "",
+      "isYjj" : "",
+      "teachPic" : "",
+      "stageCode" : "",
+      "gradeCode" : "16",
+      "gradeName" : "六年级",
+      "url" : "",
+      "price" : 0.0,
+      "popularity" : 25,
+      "courceTime" : "",
+      "easyPea" : "",
+      "didescriptions" : "",
+      "subject" : "数学",
+      "storeScore" : 70.0,
+      "goodRange" : "",
+      "referalWay" : "",
+      "storeName" : "",
+      "liveTime" : "",
+      "storePic" : "http://itutorsale.b0.upaiyun.com/edb99e07e92072d3628d062e916a1087.png",
+      "brief" : "人人高兴",
+      "introduction" : "破XPwry一"
+    }, {
+      "openId" : "34f8b960-1b8c-45aa-91d0-7be00670dfdd",
+      "name" : "刘玲玲",
+      "waresType" : 0,
+      "waresId" : 0,
+      "curriculumName" : "",
+      "img" : "",
+      "isYjj" : "",
+      "teachPic" : "",
+      "stageCode" : "",
+      "gradeCode" : "16",
+      "gradeName" : "六年级",
+      "url" : "",
+      "price" : 0.0,
+      "popularity" : 25,
+      "courceTime" : "",
+      "easyPea" : "",
+      "didescriptions" : "",
+      "subject" : "数学",
+      "storeScore" : 0.0,
+      "goodRange" : "",
+      "referalWay" : "",
+      "storeName" : "",
+      "liveTime" : "",
+      "storePic" : "http://itutorsale.b0.upaiyun.com/f3ebc15e592944c84b0ab861220f011c.png",
+      "brief" : "天天向上",
+      "introduction" : "天天向上"
+    }, {
+      "openId" : "34f8b960-1b8c-45aa-91d0-7be00670dfdd",
+      "name" : "刘玲玲",
+      "waresType" : 0,
+      "waresId" : 0,
+      "curriculumName" : "",
+      "img" : "",
+      "isYjj" : "",
+      "teachPic" : "",
+      "stageCode" : "",
+      "gradeCode" : "16",
+      "gradeName" : "六年级",
+      "url" : "",
+      "price" : 0.0,
+      "popularity" : 25,
+      "courceTime" : "",
+      "easyPea" : "",
+      "didescriptions" : "",
+      "subject" : "数学",
+      "storeScore" : 0.0,
+      "goodRange" : "",
+      "referalWay" : "",
+      "storeName" : "",
+      "liveTime" : "",
+      "storePic" : "http://itutorsale.b0.upaiyun.com/f3ebc15e592944c84b0ab861220f011c.png",
+      "brief" : "天天向上",
+      "introduction" : "天天向上"
+    }, {
+      "openId" : "a444f0b3-af66-4097-94eb-2fe34283b4db",
+      "name" : "王彩娟",
+      "waresType" : 0,
+      "waresId" : 0,
+      "curriculumName" : "",
+      "img" : "",
+      "isYjj" : "",
+      "teachPic" : "",
+      "stageCode" : "",
+      "gradeCode" : "16",
+      "gradeName" : "六年级",
+      "url" : "",
+      "price" : 0.0,
+      "popularity" : 105,
+      "courceTime" : "",
+      "easyPea" : "",
+      "didescriptions" : "",
+      "subject" : "数学",
+      "storeScore" : 15.0,
+      "goodRange" : "",
+      "referalWay" : "",
+      "storeName" : "",
+      "liveTime" : "",
+      "storePic" : "http://itutorsale.b0.upaiyun.com/37ceb4e411bf311a1a4e4473f7bda747.png",
+      "brief" : "123",
+      "introduction" : "455"
+    } ]
+  }
+}
+2016-12-23 11:53:37.331  INFO 30984 --- [http-nio-7002-exec-6] com.yijiajiao.oss.filter.DumpFilter      : 本次请求耗时（毫秒）：418
