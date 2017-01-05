@@ -100,6 +100,17 @@ public class GoodsInfoFrontServiceImpl implements GoodsInfoFrontService {
 							front.setSubject(obj.get("subjectName").toString());
 							front.setStoreScore(obj.getDouble("storeScore"));
 							front.setPopularity((Integer)obj.get("popularity"));
+							front.setStorePic(CastUtil.castString(obj.get("storePic")));
+							front.setIntroduction(CastUtil.castString(obj.get("introduction")));
+							String jsonString = obj.get("gradeModel").toString();
+							JSONArray jsonArray = JSONArray.parseArray(jsonString);
+							for (Object json: jsonArray
+									) {
+								JSONObject jsonObject = JSONObject.parseObject(json.toString());
+								front.setGradeName(CastUtil.castString(jsonObject.get("gradeName")));
+								front.setGradeCode(CastUtil.castString(jsonObject.get("gradeCode")));
+
+							}
 							list.add(front);
 						}
 						log.info("正确信息：" + r.getResult().toString());

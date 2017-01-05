@@ -3,11 +3,12 @@ package com.yijiajiao.oss.service.impl;
 import com.alibaba.fastjson.JSON;
 import com.google.common.collect.ImmutableMap;
 import com.google.gson.*;
-import com.yijiajiao.oss.domain.vo.FocusBean;
+import com.yijiajiao.oss.domain.vo.FrontListBean;
 import com.yijiajiao.oss.mapper.FocusPictureFrontMapper;
 import com.yijiajiao.oss.mapper.FocusPictureMapper;
 import com.yijiajiao.oss.mapper.GoodsInfoFrontMapper;
 import com.yijiajiao.oss.service.FocusPictureService;
+import com.yijiajiao.oss.service.GoodsInfoFrontService;
 import com.yijiajiao.oss.util.Config;
 import com.yijiajiao.oss.util.ResultWrapper;
 import com.yijiajiao.oss.util.SolutionUtil;
@@ -18,8 +19,7 @@ import org.springframework.transaction.annotation.Transactional;
 import pub.tbc.mybatis.plugin.Objs;
 import redis.clients.jedis.Jedis;
 
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Service
 public class FocusPictureServiceImpl implements FocusPictureService {
@@ -31,10 +31,13 @@ public class FocusPictureServiceImpl implements FocusPictureService {
     FocusPictureFrontMapper frontMapper;
     @Autowired
     GoodsInfoFrontMapper goodsMapper;
+    @Autowired
+    GoodsInfoFrontService service;
+
 
     private static String redisIp = Config.getString("redis.ip");
     private static int redisPort = Config.getInt("redis.port");
-    private static String goodinfo_2 = Config.getString("goodinfo_2");
+    private static String goodinfo_2=Config.getString("goodinfo_2");
 
     /**
      * id查询
@@ -148,31 +151,84 @@ public class FocusPictureServiceImpl implements FocusPictureService {
             resultbean.bad(SystemStatus.UNAUTHORIZED.toString());
         } else {
             if (belongs.endsWith("2") || belongs.equals("3") || belongs.endsWith("4") || belongs.equals("5") || belongs.equals("6")) {
-                List<Map<String, Object>> goodsinfo = frontMapper.getByBelongs(belongs);
+                List<Map<String, Object>> goodsinfo = goodsMapper.getBelongs(belongs);
+                List<Map<String, Object>> newList = new ArrayList<>();
+                Map<String, Object> lastMap = new HashMap();
+                String resultJsonStr="";
+                for (int i=0;i<goodsinfo.size();i++){
+                    Map<String, Object> map = new HashMap();
+                    resultJsonStr = SolutionUtil.httpRest(goodinfo_2, "/" + belongs + "/" +goodsinfo.get(i).get("front_area"), null, null, "GET");
+                    if (!"5".equals(goodsinfo.get(i).get("front_area"))) {
+                        Map<String, Object> newMap = new HashMap();
+                        Gson gson = new GsonBuilder().registerTypeAdapter(Double.class, new JsonSerializer<Double>() {
+                            @Override
+                            public JsonElement serialize(Double src, java.lang.reflect.Type typeOfSrc,
+                                                         JsonSerializationContext context) {
+                                if (src == src.longValue())
+                                    return new JsonPrimitive(src.longValue());
+                                return new JsonPrimitive(src);
+                            }
+                        }).create();
 
-                for (int i = 0; i < goodsinfo.size(); i++) {
+                        Map<String, Map<String, Object>> obj = JSON.parseObject(resultJsonStr, Map.class);
+                        map = obj.get("result");
+                        newMap.put("list", map.get("list"));
+                        newList.add(newMap);
+                        jd.select(2);
+                        String key = belongs + ":" +goodsinfo.get(i).get("front_area");
+                        jd.del(key);
+                        jd.set(key, JSON.toJSONString(map));
+                        jd.close();
+                    } else {
 
-                    //此处接口area有误
-                    String resultJsonStr = SolutionUtil.httpRest(goodinfo_2, "/" + belongs + "/" + area, null, null, "GET");
-                    Gson gson = new GsonBuilder().registerTypeAdapter(Double.class, new JsonSerializer<Double>() {
-                        @Override
-                        public JsonElement serialize(Double src, java.lang.reflect.Type typeOfSrc,
-                                                     JsonSerializationContext context) {
-                            if (src == src.longValue())
-                                return new JsonPrimitive(src.longValue());
-                            return new JsonPrimitive(src);
-                        }
-                    }).create();
-
-                    Map<String, Map<String, Object>> obj = JSON.parseObject(resultJsonStr, Map.class);
-                    Map<String, Object> map = obj.get("result");
-
-                    jd.select(2);
-                    String key = belongs + ":" + area;
-                    jd.set(key, "");
-                    jd.set(key, JSON.toJSONString(map));
+                    }
                 }
+                Gson gson = new GsonBuilder().registerTypeAdapter(Double.class, new JsonSerializer<Double>() {
+                    @Override
+                    public JsonElement serialize(Double src, java.lang.reflect.Type typeOfSrc,
+                                                 JsonSerializationContext context) {
+                        if (src == src.longValue())
+                            return new JsonPrimitive(src.longValue());
+                        return new JsonPrimitive(src);
+                    }
+                }).create();
+                List<List<?>> lastList =new ArrayList<>();
+                for (Map map1 : newList) {
+
+                    Map<String, Object> map2 = new HashMap();
+                    for (Object k : map1.keySet()) {
+                        lastList.addAll((Collection<? extends List<?>>) map1.get(k));
+                    }
+                }
+
+
+                List<List<?>> list = new ArrayList<>();
+                if (lastList.size() > 6) {
+                    Random r = new Random();
+                    List<Integer> tempList = new ArrayList<>();
+                    for (int i = 0; i < 6; i++) {
+                        int nextInt = r.nextInt(12);
+                        if (!tempList.contains(nextInt)) { //判断不重复
+                            System.out.println(nextInt);
+                            tempList.add(nextInt);
+                            list.add(lastList.get(nextInt));
+                        } else {
+                            i--;
+                        }
+                    }
+                }
+
+                Map<String, Map<String, Object>> obj = JSON.parseObject(resultJsonStr, Map.class);
+                lastMap = obj.get("result");
+                lastMap.put("list",list);
+                //newList.removeAll(newList);
+                jd.select(2);
+                String key = belongs + ":" + 5;
+                jd.del(key);
+                jd.set(key, JSON.toJSONString(lastMap));
                 jd.close();
+
+
             }
         }
 

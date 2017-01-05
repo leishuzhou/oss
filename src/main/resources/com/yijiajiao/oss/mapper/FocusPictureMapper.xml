@@ -20,7 +20,10 @@
             SET status =#{status}
         </if>
         <if test="status == null">
-            SET   bgcolor =#{bgColor} , img =#{img} , title =#{title} , url =#{url}
+            SET   bgcolor =#{bgColor}  , title =#{title} , url =#{url}
+            <if test="img != null">
+                ,img =#{img}
+            </if>
         </if>
         WHERE
         id =#{id}

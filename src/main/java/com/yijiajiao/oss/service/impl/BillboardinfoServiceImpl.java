@@ -31,11 +31,6 @@ public class BillboardinfoServiceImpl implements BillboardInfoService {
     @Autowired
     BillboardInfoFrontMapper frontMapper;
 
-    private static String redisIp = Config.getString("redis.ip");
-    private static int redisPort = Config.getInt("redis.port");
-    private static String goodinfo_2 = Config.getString("goodinfo_2");
-    private String teacher_server = Config.getString("teacher_server");
-    private String teacher_login = Config.getString("teacher_login");
 
     private Logger log = LoggerFactory.getLogger(BillboardinfoServiceImpl.class);
 

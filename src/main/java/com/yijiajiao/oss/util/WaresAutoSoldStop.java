@@ -79,7 +79,7 @@ public class WaresAutoSoldStop {
 					Jedis jd = new Jedis(redisIp, redisPort);
 					jd.select(2);
 					String key = b.getFrontBelongs() + ":" + b.getFrontArea();
-					jd.set(key, "");
+					jd.del(key);
 					jd.set(key, JSON.toJSONString(map));
 					jd.close();
 				} else {
@@ -121,7 +121,7 @@ public class WaresAutoSoldStop {
 					Jedis jd = new Jedis(redisIp, redisPort);
 					jd.select(2);
 					String key = b.getFrontBelongs() + ":" + 5;
-					jd.set(key, "");
+					jd.del(key);
 					jd.set(key, JSON.toJSONString(map));
 					jd.close();
 				}

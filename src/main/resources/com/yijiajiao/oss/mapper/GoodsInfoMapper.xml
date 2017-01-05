@@ -38,6 +38,7 @@
         WHERE
         belongs = #{belongs}
         AND area = #{area}
+        order by sort asc
 
     </select>
 

@@ -6,10 +6,13 @@ import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Ordering;
 import com.google.gson.*;
+import com.yijiajiao.oss.controller.GoodsInfoController;
+import com.yijiajiao.oss.domain.vo.FrontListBean;
 import com.yijiajiao.oss.domain.vo.GoodsInfoBean;
 import com.yijiajiao.oss.domain.vo.IdsBean;
 import com.yijiajiao.oss.mapper.GoodsInfoFrontMapper;
 import com.yijiajiao.oss.mapper.GoodsInfoMapper;
+import com.yijiajiao.oss.service.GoodsInfoFrontService;
 import com.yijiajiao.oss.service.GoodsInfoService;
 import com.yijiajiao.oss.util.BegUtils;
 import com.yijiajiao.oss.util.Config;
@@ -33,11 +36,12 @@ public class GoodsInfoServiceImpl implements GoodsInfoService {
     GoodsInfoMapper mapper;
     @Autowired
     GoodsInfoFrontMapper frontMapper;
+    @Autowired
+    GoodsInfoFrontService service;
 
 
     private static String redisIp = Config.getString("redis.ip");
     private static int redisPort = Config.getInt("redis.port");
-    private static String goodinfo_2 = Config.getString("goodinfo_2");
     private Logger log = LoggerFactory.getLogger(GoodsInfoServiceImpl.class);
     static int maxSize = 1000;
 
@@ -123,7 +127,8 @@ public class GoodsInfoServiceImpl implements GoodsInfoService {
     public int releasefocus(String belongs, String area) {
         frontMapper.deleteFrontGoods(ImmutableMap.of("belongs", (Object) belongs, "area", area));
         int a = frontMapper.releaseFrontGoods(ImmutableMap.of("belongs", (Object) belongs, "area", area));
-        String resultJsonStr = SolutionUtil.httpRest(goodinfo_2, "/" + belongs + "/" + area, null, null, "GET");
+        FrontListBean result = service.getGoods(belongs, area);
+        //String resultJsonStr = SolutionUtil.httpRest(goodinfo_2, "/" + belongs + "/" + area, null, null, "GET");
         Gson gson = new GsonBuilder().registerTypeAdapter(Double.class, new JsonSerializer<Double>() {
             @Override
             public JsonElement serialize(Double src, java.lang.reflect.Type typeOfSrc,
@@ -134,15 +139,15 @@ public class GoodsInfoServiceImpl implements GoodsInfoService {
             }
         }).create();
 
-        Map<String, Map<String, Object>> obj = JSON.parseObject(resultJsonStr, Map.class);
-        Map<String, Object> map = obj.get("result");
+        /*Map<String, Map<String, Object>> obj = JSON.parseObject(resultJsonStr, Map.class);
+        Map<String, Object> map = obj.get("result");*/
 
         Jedis jd = new Jedis(redisIp, redisPort);
         jd.select(2);
         String key = belongs + ":" + area;
-        jd.set(key, "");
+        jd.del(key);
 
-        jd.set(key, JSON.toJSONString(map));
+        jd.set(key, JSON.toJSONString(result));
         log.debug("{}", jd.get(key));
         jd.close();
         return a;
