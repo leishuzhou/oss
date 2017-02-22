@@ -113,7 +113,7 @@ public class GoodsInfoServiceImpl implements GoodsInfoService {
                 map2.put("sort", entity.get(i).get("sort"));
                 map2.put("id", entity.get(i).get("id"));
                 map2.put("name", entity.get(i).get("name"));
-                map2.put("openId", entity.get(i).get("open_id"));
+                map2.put("openId", entity.get(i).get("openId"));
                 map2.put("img", entity.get(i).get("img"));
                 map2.put("url", entity.get(i).get("url"));
                 mapList2.add(map2);

@@ -137,7 +137,6 @@ public class FocusPictureServiceImpl implements FocusPictureService {
         return mapper.getFocusByBlongsAndArea(ImmutableMap.of("belongs", (Object) belongs, "area", area));
     }
 
-    @Transactional
     @Override
     public List<Map<String, Object>> releasefocus(String belongs, String area) {
         ResultWrapper resultbean = new ResultWrapper();
